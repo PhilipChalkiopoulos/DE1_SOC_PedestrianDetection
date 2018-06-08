@@ -1,0 +1,118 @@
+Assembler report for DE1_SOC_Linux_FB
+Wed May 30 18:22:05 2018
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Encrypted IP Cores Summary
+  5. Assembler Generated Files
+  6. Assembler Device Options: DE1_SOC_Linux_FB_time_limited.sof
+  7. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Wed May 30 18:22:05 2018 ;
+; Revision Name         ; DE1_SOC_Linux_FB                      ;
+; Top-level Entity Name ; DE1_SOC_Linux_FB                      ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CSEMA5F31C6                          ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++--------------------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                               ;
++--------+-------------------------------------------+---------------+
+; Vendor ; IP Core Name                              ; License Type  ;
++--------+-------------------------------------------+---------------+
+; Altera ; "Alpha Blending Mixer" (6AF7 00B5)        ; OpenCore Plus ;
+; Altera ; "Frame Buffer" (6AF7 00C3)                ; OpenCore Plus ;
+; Altera ; "Color Plane Sequencer" (6AF7 00C9)       ; OpenCore Plus ;
+; Altera ; VIP Scaler II (6AF7 00E9)                 ; OpenCore Plus ;
+; Altera ; VIP Test Pattern Generator II (6AF7 00F3) ; OpenCore Plus ;
+; Altera ; VIP Clipper II (6AF7 0115)                ; OpenCore Plus ;
+; Altera ; Signal Tap (6AF7 BCE1)                    ; Licensed      ;
+; Altera ; Signal Tap (6AF7 BCEC)                    ; Licensed      ;
+; Altera ; Unknown (6AF7 FFFF)                       ; Licensed      ;
++--------+-------------------------------------------+---------------+
+
+
++-----------------------------------+
+; Assembler Generated Files         ;
++-----------------------------------+
+; File Name                         ;
++-----------------------------------+
+; DE1_SOC_Linux_FB_time_limited.sof ;
++-----------------------------------+
+
+
++-------------------------------------------------------------+
+; Assembler Device Options: DE1_SOC_Linux_FB_time_limited.sof ;
++----------------+--------------------------------------------+
+; Option         ; Setting                                    ;
++----------------+--------------------------------------------+
+; Device         ; 5CSEMA5F31C6                               ;
+; JTAG usercode  ; 0x09A39DD0                                 ;
+; Checksum       ; 0x09A39DD0                                 ;
++----------------+--------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+    Info: Processing started: Wed May 30 18:21:23 2018
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DE1_SOC_Linux_FB -c DE1_SOC_Linux_FB
+Info (115030): Assembler is generating device programming files
+Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
+Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00B5
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00C3
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00C9
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00E9
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00F3
+Info (210040): SRAM Object File /home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB_onchip/DE1_SOC_Linux_FB_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x0115
+Info (11878): Hard Processor Subsystem configuration has not changed and a Preloader software update is not required
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1468 megabytes
+    Info: Processing ended: Wed May 30 18:22:06 2018
+    Info: Elapsed time: 00:00:43
+    Info: Total CPU time (on all processors): 00:00:42
+
+

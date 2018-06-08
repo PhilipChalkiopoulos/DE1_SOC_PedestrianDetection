@@ -1,0 +1,1644 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007fc90d1d4f05, pid=10494, tid=140503488927488
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_05-b13) (build 1.8.0_05-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.5-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libcusp151_parser.so+0xa8f05]  jni_ParserLink_c::logMessage(int, char const*)+0x25
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000538
+
+Registers:
+RAX=0x00007fc90d6cae61, RBX=0x00007fc90d6cb2d0, RCX=0x00007fc9844b598d, RDX=0x00007fc90d6cae60
+RSP=0x00007ffeca9b3090, RBP=0x00007ffeca9b35f0, RSI=0x00007fc90d6cae60, RDI=0x00007fc9204b79e0
+R8 =0x0000000000000000, R9 =0x00007fc980fe99d0, R10=0x0000000000000000, R11=0x0000000000000246
+R12=0x00007fc930352830, R13=0x0000000000000000, R14=0x00007fc9848c1700, R15=0x00007fc980fe9d28
+RIP=0x00007fc90d1d4f05, EFLAGS=0x0000000000010206, CSGSFS=0x002b000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007ffeca9b3090)
+0x00007ffeca9b3090:   00007fc9848c3000 00007fc90d6cae60
+0x00007ffeca9b30a0:   00007ffeca9b35f0 00007fc90d6cae60
+0x00007ffeca9b30b0:   0000000000000000 00007fc90d1c7f2f
+0x00007ffeca9b30c0:   000000000000000a 00007ffeca9b35f0
+0x00007ffeca9b30d0:   00007ffeca9b3550 00007fc90d1c80c9
+0x00007ffeca9b30e0:   00007fc980fe9700 00007fc90d267a58
+0x00007ffeca9b30f0:   00007fc9844adf60 00007fc983cfd4b0
+0x00007ffeca9b3100:   0000000000000006 0000000000000000
+0x00007ffeca9b3110:   0000000000000000 00007ffe00000002
+0x00007ffeca9b3120:   0000000000000000 00000000000000ca
+0x00007ffeca9b3130:   00007fc980fe99d0 0000000000000000
+0x00007ffeca9b3140:   0000000000000246 00007ffeca9b3550
+0x00007ffeca9b3150:   0000000000000000 00007fc9848c1700
+0x00007ffeca9b3160:   00007fc980fe9d28 00007fc980fe99d0
+0x00007ffeca9b3170:   0000000000000000 00007ffeca9b35f0
+0x00007ffeca9b3180:   00007fc980fe9700 0000000000002900
+0x00007ffeca9b3190:   00000000000000ca 00007fc9844b598d
+0x00007ffeca9b31a0:   00007ffeca9b3540 00007fc9844b598b
+0x00007ffeca9b31b0:   0000000000000246 002b000000000033
+0x00007ffeca9b31c0:   0000000000000000 0000000000000000
+0x00007ffeca9b31d0:   0000000000000000 0000000000000000
+0x00007ffeca9b31e0:   00007ffeca9b32c0 00007fc98408cb20
+0x00007ffeca9b31f0:   00000000000000c0 00007fc9846d3e14
+0x00007ffeca9b3200:   0000000000000010 00000000000000d3
+0x00007ffeca9b3210:   00007fc9848ee0d0 00007fc9844adf18
+0x00007ffeca9b3220:   00007fc9844afef8 0000000000000000
+0x00007ffeca9b3230:   00000000000000d3 00007fc9844afef8
+0x00007ffeca9b3240:   00007fc9848ee0d0 00007ffeca9b32e8
+0x00007ffeca9b3250:   00007ffeca9b32e4 00007fc9846d3fe1
+0x00007ffeca9b3260:   00007ffeca9b32f4 00007fc98429712c
+0x00007ffeca9b3270:   00007fc984296a48 00007ffeca9b32e8
+0x00007ffeca9b3280:   0000000005d4073c 000000000017501c 
+
+Instructions: (pc=0x00007fc90d1d4f05)
+0x00007fc90d1d4ee5:   41 54 49 89 fc 55 53 48 83 ec 08 48 85 d2 74 2b
+0x00007fc90d1d4ef5:   48 8b 1d 8c 58 4d 00 48 89 d6 48 8b 3b 4c 8b 07
+0x00007fc90d1d4f05:   41 ff 90 38 05 00 00 48 85 c0 48 89 c5 75 3b 48
+0x00007fc90d1d4f15:   83 c4 08 5b 5d 41 5c 41 5d c3 90 48 8b 05 51 4e 
+
+Register to memory mapping:
+
+RAX=0x00007fc90d6cae61: <offset 0x59ee61> in /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so at 0x00007fc90d12c000
+RBX=0x00007fc90d6cb2d0: _ZN8jni_base5s_envE+0 in /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so at 0x00007fc90d12c000
+RCX=0x00007fc9844b598d: pthread_join+0xbd in /lib/x86_64-linux-gnu/libpthread.so.0 at 0x00007fc9844ad000
+RDX=0x00007fc90d6cae60: <offset 0x59ee60> in /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so at 0x00007fc90d12c000
+RSP=0x00007ffeca9b3090 is an unknown value
+RBP=0x00007ffeca9b35f0 is an unknown value
+RSI=0x00007fc90d6cae60: <offset 0x59ee60> in /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so at 0x00007fc90d12c000
+RDI=0x00007fc9204b79e0 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x00007fc980fe99d0 is pointing into the stack for thread: 0x00007fc974010000
+R10=0x0000000000000000 is an unknown value
+R11=0x0000000000000246 is an unknown value
+R12=0x00007fc930352830 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007fc9848c1700 is an unknown value
+R15=0x00007fc980fe9d28 is pointing into the stack for thread: 0x00007fc974010000
+
+
+Stack: [0x00007ffeca8bd000,0x00007ffeca9bd000],  sp=0x00007ffeca9b3090,  free space=984k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libcusp151_parser.so+0xa8f05]  jni_ParserLink_c::logMessage(int, char const*)+0x25
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007fc97400c780] Threads_lock - owner thread: 0x00007fc97413f000
+[0x00007fc97400d500] PeriodicTask_lock - owner thread: 0x00007fc97418b800
+
+Heap:
+ def new generation   total 105728K, used 55008K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,  53% used [0x00000000a2400000, 0x00000000a5529b50, 0x00000000a7fd0000)
+  from space 11712K,  39% used [0x00000000a8b40000, 0x00000000a8fce818, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 196057K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd776798, 0x00000000cd776800, 0x00000000cfd4d000)
+ Metaspace       used 57928K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7582K, capacity 7887K, committed 7936K, reserved 1048576K
+
+Card table byte_map: [0x00007fc97b0fe000,0x00007fc97b3ed000] byte_map_base: 0x00007fc97abec000
+
+Polling page: 0x00007fc9848e6000
+
+CodeCache: size=245760Kb used=64211Kb max_used=66126Kb free=181548Kb
+ bounds [0x00007fc965000000, 0x00007fc969100000, 0x00007fc974000000]
+ total_blobs=17362 nmethods=16638 adapters=633
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 4210.754 Thread 0x00007fc97417b800 23511       3       sun.awt.X11.XClientMessageEvent::get_data (27 bytes)
+Event: 4210.755 Thread 0x00007fc97417b800 nmethod 23511 0x00007fc9651ac990 code [0x00007fc9651acb20, 0x00007fc9651acf48]
+Event: 4214.304 Thread 0x00007fc97417b800 23512       3       sun.awt.X11.XDragAndDropProtocols::getDropTargetProtocols (9 bytes)
+Event: 4214.304 Thread 0x00007fc97417b800 nmethod 23512 0x00007fc967169850 code [0x00007fc9671699e0, 0x00007fc967169d88]
+Event: 4299.078 Thread 0x00007fc97417b800 23513       3       sun.awt.X11.XWM::getExtendedState (57 bytes)
+Event: 4299.079 Thread 0x00007fc97417b800 nmethod 23513 0x00007fc966d83510 code [0x00007fc966d83720, 0x00007fc966d84288]
+Event: 4305.808 Thread 0x00007fc974177800 23514       4       sun.awt.X11.XWindow::postEvent (12 bytes)
+Event: 4305.809 Thread 0x00007fc974177800 nmethod 23514 0x00007fc966db3310 code [0x00007fc966db3460, 0x00007fc966db3518]
+Event: 4305.902 Thread 0x00007fc97417b800 23515       3       sun.awt.X11.XWindowPeer::setNETWMState (19 bytes)
+Event: 4305.903 Thread 0x00007fc97417b800 nmethod 23515 0x00007fc9654d03d0 code [0x00007fc9654d05a0, 0x00007fc9654d0d48]
+
+GC Heap History (10 events):
+Event: 3969.047 GC heap before
+{Heap before GC invocations=724 (full 6):
+ def new generation   total 105728K, used 98690K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K, 100% used [0x00000000a2400000, 0x00000000a7fd0000, 0x00000000a7fd0000)
+  from space 11712K,  39% used [0x00000000a7fd0000, 0x00000000a8460b88, 0x00000000a8b40000)
+  to   space 11712K,   0% used [0x00000000a8b40000, 0x00000000a8b40000, 0x00000000a96b0000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73a9c8, 0x00000000cd73aa00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+Event: 3969.063 GC heap after
+Heap after GC invocations=725 (full 6):
+ def new generation   total 105728K, used 5728K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a7fd0000)
+  from space 11712K,  48% used [0x00000000a8b40000, 0x00000000a90d82b0, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73a9e8, 0x00000000cd73aa00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+}
+Event: 3969.370 GC heap before
+{Heap before GC invocations=725 (full 6):
+ def new generation   total 105728K, used 99744K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K, 100% used [0x00000000a2400000, 0x00000000a7fd0000, 0x00000000a7fd0000)
+  from space 11712K,  48% used [0x00000000a8b40000, 0x00000000a90d82b0, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73a9e8, 0x00000000cd73aa00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+Event: 3969.382 GC heap after
+Heap after GC invocations=726 (full 6):
+ def new generation   total 105728K, used 4533K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a7fd0000)
+  from space 11712K,  38% used [0x00000000a7fd0000, 0x00000000a843d528, 0x00000000a8b40000)
+  to   space 11712K,   0% used [0x00000000a8b40000, 0x00000000a8b40000, 0x00000000a96b0000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73aa98, 0x00000000cd73ac00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+}
+Event: 3969.678 GC heap before
+{Heap before GC invocations=726 (full 6):
+ def new generation   total 105728K, used 98549K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K, 100% used [0x00000000a2400000, 0x00000000a7fd0000, 0x00000000a7fd0000)
+  from space 11712K,  38% used [0x00000000a7fd0000, 0x00000000a843d528, 0x00000000a8b40000)
+  to   space 11712K,   0% used [0x00000000a8b40000, 0x00000000a8b40000, 0x00000000a96b0000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73aa98, 0x00000000cd73ac00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+Event: 3969.692 GC heap after
+Heap after GC invocations=727 (full 6):
+ def new generation   total 105728K, used 5129K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a7fd0000)
+  from space 11712K,  43% used [0x00000000a8b40000, 0x00000000a9042610, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73aa98, 0x00000000cd73ac00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+}
+Event: 3970.020 GC heap before
+{Heap before GC invocations=727 (full 6):
+ def new generation   total 105728K, used 99145K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K, 100% used [0x00000000a2400000, 0x00000000a7fd0000, 0x00000000a7fd0000)
+  from space 11712K,  43% used [0x00000000a8b40000, 0x00000000a9042610, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 195818K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd73aa98, 0x00000000cd73ac00, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+Event: 3970.031 GC heap after
+Heap after GC invocations=728 (full 6):
+ def new generation   total 105728K, used 3955K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a7fd0000)
+  from space 11712K,  33% used [0x00000000a7fd0000, 0x00000000a83acc28, 0x00000000a8b40000)
+  to   space 11712K,   0% used [0x00000000a8b40000, 0x00000000a8b40000, 0x00000000a96b0000)
+ tenured generation   total 234804K, used 195988K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd765130, 0x00000000cd765200, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+}
+Event: 3970.336 GC heap before
+{Heap before GC invocations=728 (full 6):
+ def new generation   total 105728K, used 97971K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K, 100% used [0x00000000a2400000, 0x00000000a7fd0000, 0x00000000a7fd0000)
+  from space 11712K,  33% used [0x00000000a7fd0000, 0x00000000a83acc28, 0x00000000a8b40000)
+  to   space 11712K,   0% used [0x00000000a8b40000, 0x00000000a8b40000, 0x00000000a96b0000)
+ tenured generation   total 234804K, used 195988K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd765130, 0x00000000cd765200, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+Event: 3970.351 GC heap after
+Heap after GC invocations=729 (full 6):
+ def new generation   total 105728K, used 4666K [0x00000000a2400000, 0x00000000a96b0000, 0x00000000c1800000)
+  eden space 94016K,   0% used [0x00000000a2400000, 0x00000000a2400000, 0x00000000a7fd0000)
+  from space 11712K,  39% used [0x00000000a8b40000, 0x00000000a8fce818, 0x00000000a96b0000)
+  to   space 11712K,   0% used [0x00000000a7fd0000, 0x00000000a7fd0000, 0x00000000a8b40000)
+ tenured generation   total 234804K, used 196057K [0x00000000c1800000, 0x00000000cfd4d000, 0x0000000100000000)
+   the space 234804K,  83% used [0x00000000c1800000, 0x00000000cd776798, 0x00000000cd776800, 0x00000000cfd4d000)
+ Metaspace       used 57910K, capacity 59440K, committed 59648K, reserved 1101824K
+  class space    used 7579K, capacity 7887K, committed 7936K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 3956.213 Thread 0x00007fc924003000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc968fd68f8 method=com.altera.sopcmodel.ensemble.EnsembleSystemPropagator.validateConnection(Lcom/altera/entityinterfaces/IConnection;Ljava/util/Set;)V @ 1
+Event: 3956.213 Thread 0x00007fc924003000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc968fd68f8 method=com.altera.sopcmodel.ensemble.EnsembleSystemPropagator.validateConnection(Lcom/altera/entityinterfaces/IConnection;Ljava/util/Set;)V @ 1
+Event: 3956.226 Thread 0x00007fc924003000 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc968fd68f8 method=com.altera.sopcmodel.ensemble.EnsembleSystemPropagator.validateConnection(Lcom/altera/entityinterfaces/IConnection;Ljava/util/Set;)V @ 1
+Event: 3957.951 Thread 0x00007fc9205ab800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc96902b3e8 method=com.altera.sopcmodel.ensemble.EnsembleValidator.validateTristateConduitSpecifics(Ljava/util/Collection;Lcom/altera/entityinterfaces/message/IMessageLogger;)V @ 31
+Event: 3957.952 Thread 0x00007fc9205ab800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc96902b3e8 method=com.altera.sopcmodel.ensemble.EnsembleValidator.validateTristateConduitSpecifics(Ljava/util/Collection;Lcom/altera/entityinterfaces/message/IMessageLogger;)V @ 31
+Event: 3957.952 Thread 0x00007fc9205ab800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc96902b3e8 method=com.altera.sopcmodel.ensemble.EnsembleValidator.validateTristateConduitSpecifics(Ljava/util/Collection;Lcom/altera/entityinterfaces/message/IMessageLogger;)V @ 31
+Event: 3957.974 Thread 0x00007fc9205ab800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc96902b3e8 method=com.altera.sopcmodel.ensemble.EnsembleValidator.validateTristateConduitSpecifics(Ljava/util/Collection;Lcom/altera/entityinterfaces/message/IMessageLogger;)V @ 31
+Event: 3960.030 Thread 0x00007fc924003000 Uncommon trap: reason=null_check action=make_not_entrant pc=0x00007fc96874cc14 method=com.altera.sopcmodel.components.tclmodule.LiveModulePointsAndPorts.isPortActiveHigh(Lcom/altera/entityinterfaces/IPort;)Z @ 182
+Event: 4318.983 Thread 0x00007fc97459a800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007fc966fe1210 method=sun.awt.X11.XBaseWindow.dispatchEvent(Lsun/awt/X11/XEvent;)V @ 262
+Event: 4318.983 Thread 0x00007fc97459a800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007fc966fe0e50 method=sun.awt.X11.XBaseWindow.dispatchEvent(Lsun/awt/X11/XEvent;)V @ 270
+
+Internal exceptions (10 events):
+Event: 3930.845 Thread 0x00007fc92079b800 Implicit null exception at 0x00007fc9686ff7f5 to 0x00007fc9687008ed
+Event: 3930.845 Thread 0x00007fc92079b800 Implicit null exception at 0x00007fc9675b4bb1 to 0x00007fc9675b5bfd
+Event: 3930.846 Thread 0x00007fc92079b800 Implicit null exception at 0x00007fc968a9955a to 0x00007fc968a9ff89
+Event: 3930.846 Thread 0x00007fc92079b800 Implicit null exception at 0x00007fc966550624 to 0x00007fc966550a1d
+Event: 3930.849 Thread 0x00007fc92079b800 Implicit null exception at 0x00007fc96633b9a9 to 0x00007fc96633c589
+Event: 3954.301 Thread 0x00007fc9748a4000 Exception <a 'java/lang/UnsupportedOperationException': > (0x00000000a3f16330) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jni.cpp, line 742]
+Event: 3960.030 Thread 0x00007fc924003000 Implicit null exception at 0x00007fc9687498e3 to 0x00007fc96874cbb2
+Event: 4197.313 Thread 0x00007fc9745c9000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a548e418) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 4197.315 Thread 0x00007fc9745c9000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a54aada0) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+Event: 4197.316 Thread 0x00007fc9745c9000 Exception <a 'java/security/PrivilegedActionException'> (0x00000000a54ae248) thrown at [/HUDSON/workspace/8-2-build-linux-amd64/jdk8u5/2488/hotspot/src/share/vm/prims/jvm.cpp, line 1248]
+
+Events (10 events):
+Event: 4305.906 Thread 0x00007fc97417b800 flushing nmethod 0x00007fc966790290
+Event: 4318.219 loading class sun/awt/X11/XDestroyWindowEvent
+Event: 4318.234 loading class sun/awt/X11/XDestroyWindowEvent done
+Event: 4318.901 Executing VM operation: RevokeBias
+Event: 4318.983 Thread 0x00007fc97459a800 Uncommon trap: trap_request=0xffffffc6 fr.pc=0x00007fc966fe1210
+Event: 4318.983 Thread 0x00007fc97459a800 DEOPT PACKING pc=0x00007fc966fe1210 sp=0x00007fc978b095c0
+Event: 4318.983 Thread 0x00007fc97459a800 DEOPT UNPACKING pc=0x00007fc965047250 sp=0x00007fc978b09598 mode 2
+Event: 4318.983 Thread 0x00007fc97459a800 Uncommon trap: trap_request=0xffffffde fr.pc=0x00007fc966fe0e50
+Event: 4318.983 Thread 0x00007fc97459a800 DEOPT PACKING pc=0x00007fc966fe0e50 sp=0x00007fc978b095c0
+Event: 4318.983 Thread 0x00007fc97459a800 DEOPT UNPACKING pc=0x00007fc965047250 sp=0x00007fc978b09598 mode 2
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 08:01 13253275                           /home/ellabuser/altera/15.1/quartus/linux64/jre64/bin/java
+00600000-00601000 rw-p 00000000 08:01 13253275                           /home/ellabuser/altera/15.1/quartus/linux64/jre64/bin/java
+0215f000-021a5000 rw-p 00000000 00:00 0                                  [heap]
+a2400000-a96b0000 rw-p 00000000 00:00 0 
+a96b0000-c1800000 ---p 00000000 00:00 0 
+c1800000-cfd4d000 rw-p 00000000 00:00 0 
+cfd4d000-100000000 ---p 00000000 00:00 0 
+100000000-1007c0000 rw-p 00000000 00:00 0 
+1007c0000-140000000 ---p 00000000 00:00 0 
+7fc8c0000000-7fc8c2639000 rw-p 00000000 00:00 0 
+7fc8c2639000-7fc8c4000000 ---p 00000000 00:00 0 
+7fc8c49d7000-7fc8c4e71000 rw-s 00000000 00:05 7798829                    /SYSV00000000 (deleted)
+7fc8c52b6000-7fc8c54b6000 rw-p 00000000 00:00 0 
+7fc8c54dd000-7fc8c555d000 rw-p 00000000 00:00 0 
+7fc8c555d000-7fc8c56dd000 ---p 00000000 00:00 0 
+7fc8c56dd000-7fc8c58dd000 rw-p 00000000 00:00 0 
+7fc8c58dd000-7fc8c599b000 r-xp 00000000 08:01 12358465                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr_fdi.so
+7fc8c599b000-7fc8c5b9a000 ---p 000be000 08:01 12358465                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr_fdi.so
+7fc8c5b9a000-7fc8c5b9f000 rw-p 000bd000 08:01 12358465                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr_fdi.so
+7fc8c5b9f000-7fc8c5ba0000 rw-p 00000000 00:00 0 
+7fc8c5ba0000-7fc8c5c08000 r-xp 00000000 08:01 12358588                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi.so
+7fc8c5c08000-7fc8c5e08000 ---p 00068000 08:01 12358588                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi.so
+7fc8c5e08000-7fc8c5e0b000 rw-p 00068000 08:01 12358588                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi.so
+7fc8c5e0b000-7fc8c5e0c000 rw-p 00000000 00:00 0 
+7fc8c5e0c000-7fc8c5fb1000 r-xp 00000000 08:01 12358589                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_pti.so
+7fc8c5fb1000-7fc8c61b0000 ---p 001a5000 08:01 12358589                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_pti.so
+7fc8c61b0000-7fc8c61bb000 rw-p 001a4000 08:01 12358589                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_pti.so
+7fc8c61bb000-7fc8c61c0000 rw-p 00000000 00:00 0 
+7fc8c61c0000-7fc8c61d3000 r-xp 00000000 08:01 12359044                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_dist.so
+7fc8c61d3000-7fc8c63d2000 ---p 00013000 08:01 12359044                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_dist.so
+7fc8c63d2000-7fc8c63d4000 rw-p 00012000 08:01 12359044                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_dist.so
+7fc8c63d4000-7fc8c6408000 r-xp 00000000 08:01 12359362                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ipsta.so
+7fc8c6408000-7fc8c6608000 ---p 00034000 08:01 12359362                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ipsta.so
+7fc8c6608000-7fc8c660a000 rw-p 00034000 08:01 12359362                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ipsta.so
+7fc8c660a000-7fc8c6658000 r-xp 00000000 08:01 12358957                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dspf.so
+7fc8c6658000-7fc8c6857000 ---p 0004e000 08:01 12358957                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dspf.so
+7fc8c6857000-7fc8c6859000 rw-p 0004d000 08:01 12358957                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dspf.so
+7fc8c6859000-7fc8c704d000 r-xp 00000000 08:01 12359070                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dcalc.so
+7fc8c704d000-7fc8c724d000 ---p 007f4000 08:01 12359070                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dcalc.so
+7fc8c724d000-7fc8c72f7000 rw-p 007f4000 08:01 12359070                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dcalc.so
+7fc8c72f7000-7fc8c72fd000 rw-p 00000000 00:00 0 
+7fc8c72fd000-7fc8c731d000 r-xp 00000000 08:01 12359655                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_rpc.so
+7fc8c731d000-7fc8c751d000 ---p 00020000 08:01 12359655                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_rpc.so
+7fc8c751d000-7fc8c751f000 rw-p 00020000 08:01 12359655                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_rpc.so
+7fc8c751f000-7fc8c7541000 r-xp 00000000 08:01 12358731                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mps.so
+7fc8c7541000-7fc8c7740000 ---p 00022000 08:01 12358731                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mps.so
+7fc8c7740000-7fc8c7742000 rw-p 00021000 08:01 12358731                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mps.so
+7fc8c7742000-7fc8c7793000 r-xp 00000000 08:01 12359911                   /home/ellabuser/altera/15.1/quartus/linux64/libzmq.so
+7fc8c7793000-7fc8c7993000 ---p 00051000 08:01 12359911                   /home/ellabuser/altera/15.1/quartus/linux64/libzmq.so
+7fc8c7993000-7fc8c7997000 rw-p 00051000 08:01 12359911                   /home/ellabuser/altera/15.1/quartus/linux64/libzmq.so
+7fc8c7997000-7fc8c7c81000 r-xp 00000000 08:01 12358888                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tis.so
+7fc8c7c81000-7fc8c7e81000 ---p 002ea000 08:01 12358888                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tis.so
+7fc8c7e81000-7fc8c7e9b000 rw-p 002ea000 08:01 12358888                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tis.so
+7fc8c7e9b000-7fc8c7eaf000 rw-p 00000000 00:00 0 
+7fc8c7eaf000-7fc8c85d9000 r-xp 00000000 08:01 12359478                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_b2t.so
+7fc8c85d9000-7fc8c87d8000 ---p 0072a000 08:01 12359478                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_b2t.so
+7fc8c87d8000-7fc8c8a9c000 rw-p 00729000 08:01 12359478                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_b2t.so
+7fc8c8a9c000-7fc8c8aa8000 rw-p 00000000 00:00 0 
+7fc8c8aa8000-7fc8c8dbd000 r-xp 00000000 08:01 12359872                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_core.so
+7fc8c8dbd000-7fc8c8fbd000 ---p 00315000 08:01 12359872                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_core.so
+7fc8c8fbd000-7fc8c8fc9000 rw-p 00315000 08:01 12359872                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_core.so
+7fc8c8fc9000-7fc8c8fda000 rw-p 00000000 00:00 0 
+7fc8c8fda000-7fc8c906c000 r-xp 00000000 08:01 12358271                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb_tcl.so
+7fc8c906c000-7fc8c926c000 ---p 00092000 08:01 12358271                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb_tcl.so
+7fc8c926c000-7fc8c926e000 rw-p 00092000 08:01 12358271                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb_tcl.so
+7fc8c926e000-7fc8c9276000 rw-p 00000000 00:00 0 
+7fc8c9276000-7fc8c93ba000 r-xp 00000000 08:01 12359121                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dlib.so
+7fc8c93ba000-7fc8c95b9000 ---p 00144000 08:01 12359121                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dlib.so
+7fc8c95b9000-7fc8c95c6000 rw-p 00143000 08:01 12359121                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dlib.so
+7fc8c95c6000-7fc8c95cd000 rw-p 00000000 00:00 0 
+7fc8c95cd000-7fc8c96e0000 r-xp 00000000 08:01 12359804                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tdb.so
+7fc8c96e0000-7fc8c98e0000 ---p 00113000 08:01 12359804                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tdb.so
+7fc8c98e0000-7fc8c98e8000 rw-p 00113000 08:01 12359804                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tdb.so
+7fc8c98e8000-7fc8c98eb000 rw-p 00000000 00:00 0 
+7fc8c98eb000-7fc8c990e000 r-xp 00000000 08:01 12359625                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi_det.so
+7fc8c990e000-7fc8c9b0e000 ---p 00023000 08:01 12359625                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi_det.so
+7fc8c9b0e000-7fc8c9b0f000 rw-p 00023000 08:01 12359625                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_tapi_det.so
+7fc8c9b0f000-7fc8c9b10000 rw-p 00000000 00:00 0 
+7fc8c9b10000-7fc8c9be4000 r-xp 00000000 08:01 12358233                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_vdb.so
+7fc8c9be4000-7fc8c9de4000 ---p 000d4000 08:01 12358233                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_vdb.so
+7fc8c9de4000-7fc8c9de8000 rw-p 000d4000 08:01 12358233                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_vdb.so
+7fc8c9de8000-7fc8c9df0000 rw-p 00000000 00:00 0 
+7fc8c9df0000-7fc8c9ec8000 r-xp 00000000 08:01 12358332                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim.so
+7fc8c9ec8000-7fc8ca0c7000 ---p 000d8000 08:01 12358332                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim.so
+7fc8ca0c7000-7fc8ca0cd000 rw-p 000d7000 08:01 12358332                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim.so
+7fc8ca0cd000-7fc8ca0d8000 rw-p 00000000 00:00 0 
+7fc8ca0d8000-7fc8ca25e000 r-xp 00000000 08:01 12359143                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_sin.so
+7fc8ca25e000-7fc8ca45e000 ---p 00186000 08:01 12359143                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_sin.so
+7fc8ca45e000-7fc8ca47f000 rw-p 00186000 08:01 12359143                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_sin.so
+7fc8ca47f000-7fc8ca481000 rw-p 00000000 00:00 0 
+7fc8ca481000-7fc8ca571000 r-xp 00000000 08:01 12359003                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_qspc.so
+7fc8ca571000-7fc8ca770000 ---p 000f0000 08:01 12359003                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_qspc.so
+7fc8ca770000-7fc8ca776000 rw-p 000ef000 08:01 12359003                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_qspc.so
+7fc8ca776000-7fc8ca77a000 rw-p 00000000 00:00 0 
+7fc8ca77a000-7fc8ca7de000 r-xp 00000000 08:01 12359502                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ioo.so
+7fc8ca7de000-7fc8ca9dd000 ---p 00064000 08:01 12359502                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ioo.so
+7fc8ca9dd000-7fc8ca9e4000 rw-p 00063000 08:01 12359502                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_ioo.so
+7fc8ca9e4000-7fc8ca9e5000 rw-p 00000000 00:00 0 
+7fc8ca9e5000-7fc8caa73000 r-xp 00000000 08:01 12359369                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu.so
+7fc8caa73000-7fc8cac72000 ---p 0008e000 08:01 12359369                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu.so
+7fc8cac72000-7fc8cac77000 rw-p 0008d000 08:01 12359369                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu.so
+7fc8cac77000-7fc8cac7c000 r-xp 00000000 08:01 12358221                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_tset.so
+7fc8cac7c000-7fc8cae7b000 ---p 00005000 08:01 12358221                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_tset.so
+7fc8cae7b000-7fc8cae7c000 rw-p 00004000 08:01 12358221                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_tset.so
+7fc8cae7c000-7fc8caeb7000 r-xp 00000000 08:01 12359419                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_eti.so
+7fc8caeb7000-7fc8cb0b7000 ---p 0003b000 08:01 12359419                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_eti.so
+7fc8cb0b7000-7fc8cb0be000 rw-p 0003b000 08:01 12359419                   /home/ellabuser/altera/15.1/quartus/linux64/libtpi_eti.so
+7fc8cb0be000-7fc8cb17f000 r-xp 00000000 08:01 12358783                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_pjc.so
+7fc8cb17f000-7fc8cb37e000 ---p 000c1000 08:01 12358783                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_pjc.so
+7fc8cb37e000-7fc8cb38c000 rw-p 000c0000 08:01 12358783                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_pjc.so
+7fc8cb38c000-7fc8cb38d000 rw-p 00000000 00:00 0 
+7fc8cb38d000-7fc8cb394000 r-xp 00000000 08:01 12358199                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt_hdb.so
+7fc8cb394000-7fc8cb594000 ---p 00007000 08:01 12358199                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt_hdb.so
+7fc8cb594000-7fc8cb595000 rw-p 00007000 08:01 12358199                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt_hdb.so
+7fc8cb595000-7fc8cb61b000 r-xp 00000000 08:01 12359274                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qhd.so
+7fc8cb61b000-7fc8cb81b000 ---p 00086000 08:01 12359274                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qhd.so
+7fc8cb81b000-7fc8cb820000 rw-p 00086000 08:01 12359274                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qhd.so
+7fc8cb820000-7fc8cb963000 r-xp 00000000 08:01 12359455                   /home/ellabuser/altera/15.1/quartus/linux64/libperiph_fpp.so
+7fc8cb963000-7fc8cbb63000 ---p 00143000 08:01 12359455                   /home/ellabuser/altera/15.1/quartus/linux64/libperiph_fpp.so
+7fc8cbb63000-7fc8cbb68000 rw-p 00143000 08:01 12359455                   /home/ellabuser/altera/15.1/quartus/linux64/libperiph_fpp.so
+7fc8cbb68000-7fc8cbb69000 rw-p 00000000 00:00 0 
+7fc8cbb69000-7fc8cbb8d000 r-xp 00000000 08:01 12359846                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_fconf.so
+7fc8cbb8d000-7fc8cbd8d000 ---p 00024000 08:01 12359846                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_fconf.so
+7fc8cbd8d000-7fc8cbd8e000 rw-p 00024000 08:01 12359846                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_fconf.so
+7fc8cbd8e000-7fc8cbda1000 r-xp 00000000 08:01 12359577                   /home/ellabuser/altera/15.1/quartus/linux64/libgcl_qjson.so
+7fc8cbda1000-7fc8cbfa0000 ---p 00013000 08:01 12359577                   /home/ellabuser/altera/15.1/quartus/linux64/libgcl_qjson.so
+7fc8cbfa0000-7fc8cbfa1000 rw-p 00012000 08:01 12359577                   /home/ellabuser/altera/15.1/quartus/linux64/libgcl_qjson.so
+7fc8cbfa1000-7fc8cc00f000 r-xp 00000000 08:01 7606871                    /lib/x86_64-linux-gnu/libpcre.so.3.13.2
+7fc8cc00f000-7fc8cc20f000 ---p 0006e000 08:01 7606871                    /lib/x86_64-linux-gnu/libpcre.so.3.13.2
+7fc8cc20f000-7fc8cc210000 r--p 0006e000 08:01 7606871                    /lib/x86_64-linux-gnu/libpcre.so.3.13.2
+7fc8cc210000-7fc8cc211000 rw-p 0006f000 08:01 7606871                    /lib/x86_64-linux-gnu/libpcre.so.3.13.2
+7fc8cc211000-7fc8cc320000 r-xp 00000000 08:01 7606784                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
+7fc8cc320000-7fc8cc51f000 ---p 0010f000 08:01 7606784                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
+7fc8cc51f000-7fc8cc520000 r--p 0010e000 08:01 7606784                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
+7fc8cc520000-7fc8cc521000 rw-p 0010f000 08:01 7606784                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4800.2
+7fc8cc521000-7fc8cc522000 rw-p 00000000 00:00 0 
+7fc8cc522000-7fc8cc523000 r-xp 00000000 08:01 270892                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
+7fc8cc523000-7fc8cc722000 ---p 00001000 08:01 270892                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
+7fc8cc722000-7fc8cc723000 r--p 00000000 08:01 270892                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
+7fc8cc723000-7fc8cc724000 rw-p 00001000 08:01 270892                     /usr/lib/x86_64-linux-gnu/libgthread-2.0.so.0.4800.2
+7fc8cc724000-7fc8cc73d000 r-xp 00000000 08:01 7606933                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc8cc73d000-7fc8cc93c000 ---p 00019000 08:01 7606933                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc8cc93c000-7fc8cc93d000 r--p 00018000 08:01 7606933                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc8cc93d000-7fc8cc93e000 rw-p 00019000 08:01 7606933                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7fc8cc93e000-7fc8ccc43000 r-xp 00000000 08:01 12359953                   /home/ellabuser/altera/15.1/quartus/linux64/libQtCore.so
+7fc8ccc43000-7fc8cce42000 ---p 00305000 08:01 12359953                   /home/ellabuser/altera/15.1/quartus/linux64/libQtCore.so
+7fc8cce42000-7fc8cce53000 rw-p 00304000 08:01 12359953                   /home/ellabuser/altera/15.1/quartus/linux64/libQtCore.so
+7fc8cce53000-7fc8cce67000 r-xp 00000000 08:01 12359228                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_lampas.so
+7fc8cce67000-7fc8cd067000 ---p 00014000 08:01 12359228                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_lampas.so
+7fc8cd067000-7fc8cd068000 rw-p 00014000 08:01 12359228                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_lampas.so
+7fc8cd068000-7fc8cd10c000 r-xp 00000000 08:01 12358566                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_ares.so
+7fc8cd10c000-7fc8cd30b000 ---p 000a4000 08:01 12358566                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_ares.so
+7fc8cd30b000-7fc8cd311000 rw-p 000a3000 08:01 12358566                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_ares.so
+7fc8cd311000-7fc8cd3d7000 r-xp 00000000 08:01 12359499                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rapid.so
+7fc8cd3d7000-7fc8cd5d7000 ---p 000c6000 08:01 12359499                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rapid.so
+7fc8cd5d7000-7fc8cd5da000 rw-p 000c6000 08:01 12359499                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rapid.so
+7fc8cd5da000-7fc8cd981000 r-xp 00000000 08:01 12359691                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb.so
+7fc8cd981000-7fc8cdb80000 ---p 003a7000 08:01 12359691                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb.so
+7fc8cdb80000-7fc8cdb98000 rw-p 003a6000 08:01 12359691                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cdb.so
+7fc8cdb98000-7fc8cdba7000 rw-p 00000000 00:00 0 
+7fc8cdba7000-7fc8cdbc0000 r-xp 00000000 08:01 12358748                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cfg.so
+7fc8cdbc0000-7fc8cddbf000 ---p 00019000 08:01 12358748                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cfg.so
+7fc8cddbf000-7fc8cddc0000 rw-p 00018000 08:01 12358748                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b2_cfg.so
+7fc8cddc0000-7fc8cddc1000 rw-p 00000000 00:00 0 
+7fc8cddc1000-7fc8cdde5000 r-xp 00000000 08:01 12359594                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idb.so
+7fc8cdde5000-7fc8cdfe4000 ---p 00024000 08:01 12359594                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idb.so
+7fc8cdfe4000-7fc8cdfe7000 rw-p 00023000 08:01 12359594                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idb.so
+7fc8cdfe7000-7fc8cdfe8000 rw-p 00000000 00:00 0 
+7fc8cdfe8000-7fc8cdfea000 r-xp 00000000 08:01 12358970                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl_string_match.so
+7fc8cdfea000-7fc8ce1e9000 ---p 00002000 08:01 12358970                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl_string_match.so
+7fc8ce1e9000-7fc8ce1ea000 rw-p 00001000 08:01 12358970                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl_string_match.so
+7fc8ce1ea000-7fc8ce221000 r-xp 00000000 08:01 12359154                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_mpp.so
+7fc8ce221000-7fc8ce421000 ---p 00037000 08:01 12359154                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_mpp.so
+7fc8ce421000-7fc8ce423000 rw-p 00037000 08:01 12359154                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_mpp.so
+7fc8ce423000-7fc8ce453000 r-xp 00000000 08:01 12358605                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_logdb.so
+7fc8ce453000-7fc8ce653000 ---p 00030000 08:01 12358605                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_logdb.so
+7fc8ce653000-7fc8ce655000 rw-p 00030000 08:01 12358605                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_logdb.so
+7fc8ce655000-7fc8ce660000 rw-p 00000000 00:00 0 
+7fc8ce660000-7fc8ce67c000 r-xp 00000000 08:01 12359529                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rutil.so
+7fc8ce67c000-7fc8ce87c000 ---p 0001c000 08:01 12359529                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rutil.so
+7fc8ce87c000-7fc8ce87d000 rw-p 0001c000 08:01 12359529                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_rutil.so
+7fc8ce87d000-7fc8ce8fd000 r-xp 00000000 08:01 12359473                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_atmx.so
+7fc8ce8fd000-7fc8ceafc000 ---p 00080000 08:01 12359473                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_atmx.so
+7fc8ceafc000-7fc8ceb00000 rw-p 0007f000 08:01 12359473                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_atmx.so
+7fc8ceb00000-7fc8ced9c000 r-xp 00000000 08:01 12359475                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b.so
+7fc8ced9c000-7fc8cef9b000 ---p 0029c000 08:01 12359475                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b.so
+7fc8cef9b000-7fc8cefa8000 rw-p 0029b000 08:01 12359475                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b.so
+7fc8cefa8000-7fc8df87c000 r-xp 00000000 08:01 12358304                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tinfo.so
+7fc8df87c000-7fc8dfa7c000 ---p 108d4000 08:01 12358304                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tinfo.so
+7fc8dfa7c000-7fc8e128f000 rw-p 108d4000 08:01 12358304                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tinfo.so
+7fc8e128f000-7fc8e1290000 rw-p 00000000 00:00 0 
+7fc8e1290000-7fc8e12ce000 r-xp 00000000 08:01 12358555                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_b2b.so
+7fc8e12ce000-7fc8e14ce000 ---p 0003e000 08:01 12358555                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_b2b.so
+7fc8e14ce000-7fc8e14d7000 rw-p 0003e000 08:01 12358555                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_b2b.so
+7fc8e14d7000-7fc8e14fd000 r-xp 00000000 08:01 12359113                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qexe.so
+7fc8e14fd000-7fc8e16fc000 ---p 00026000 08:01 12359113                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qexe.so
+7fc8e16fc000-7fc8e16ff000 rw-p 00025000 08:01 12359113                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qexe.so
+7fc8e16ff000-7fc8e1728000 r-xp 00000000 08:01 12358817                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cloud.so
+7fc8e1728000-7fc8e1928000 ---p 00029000 08:01 12358817                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cloud.so
+7fc8e1928000-7fc8e192a000 rw-p 00029000 08:01 12358817                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cloud.so
+7fc8e192a000-7fc8e193e000 r-xp 00000000 08:01 12359030                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_curl.so
+7fc8e193e000-7fc8e1b3e000 ---p 00014000 08:01 12359030                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_curl.so
+7fc8e1b3e000-7fc8e1b3f000 rw-p 00014000 08:01 12359030                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_curl.so
+7fc8e1b3f000-7fc8e1b55000 r-xp 00000000 08:01 12359861                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_bat.so
+7fc8e1b55000-7fc8e1d54000 ---p 00016000 08:01 12359861                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_bat.so
+7fc8e1d54000-7fc8e1d56000 rw-p 00015000 08:01 12359861                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_bat.so
+7fc8e1d56000-7fc8e1d8f000 r-xp 00000000 08:01 12359876                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim_rc.so
+7fc8e1d8f000-7fc8e1f8f000 ---p 00039000 08:01 12359876                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim_rc.so
+7fc8e1f8f000-7fc8e1f91000 rw-p 00039000 08:01 12359876                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_tim_rc.so
+7fc8e1f91000-7fc8e1f9b000 rw-p 00000000 00:00 0 
+7fc8e1f9b000-7fc8e2a82000 r-xp 00000000 08:01 12358775                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut.so
+7fc8e2a82000-7fc8e2c82000 ---p 00ae7000 08:01 12358775                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut.so
+7fc8e2c82000-7fc8e2cb3000 rw-p 00ae7000 08:01 12358775                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut.so
+7fc8e2cb3000-7fc8e2cc6000 rw-p 00000000 00:00 0 
+7fc8e2cc6000-7fc8e2ccb000 r-xp 00000000 08:01 12358793                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_tb2.so
+7fc8e2ccb000-7fc8e2ecb000 ---p 00005000 08:01 12358793                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_tb2.so
+7fc8e2ecb000-7fc8e2ecc000 rw-p 00005000 08:01 12358793                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_tb2.so
+7fc8e2ecc000-7fc8e2ef9000 r-xp 00000000 08:01 12359215                   /home/ellabuser/altera/15.1/quartus/linux64/libsynth_bdd.so
+7fc8e2ef9000-7fc8e30f8000 ---p 0002d000 08:01 12359215                   /home/ellabuser/altera/15.1/quartus/linux64/libsynth_bdd.so
+7fc8e30f8000-7fc8e30fa000 rw-p 0002c000 08:01 12359215                   /home/ellabuser/altera/15.1/quartus/linux64/libsynth_bdd.so
+7fc8e30fa000-7fc8e3197000 r-xp 00000000 08:01 12359000                   /home/ellabuser/altera/15.1/quartus/linux64/libcbx_util.so
+7fc8e3197000-7fc8e3397000 ---p 0009d000 08:01 12359000                   /home/ellabuser/altera/15.1/quartus/linux64/libcbx_util.so
+7fc8e3397000-7fc8e3398000 rw-p 0009d000 08:01 12359000                   /home/ellabuser/altera/15.1/quartus/linux64/libcbx_util.so
+7fc8e3398000-7fc8e3440000 r-xp 00000000 08:01 12358730                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_mfam.so
+7fc8e3440000-7fc8e3640000 ---p 000a8000 08:01 12358730                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_mfam.so
+7fc8e3640000-7fc8e3644000 rw-p 000a8000 08:01 12358730                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_mfam.so
+7fc8e3644000-7fc8e3648000 rw-p 00000000 00:00 0 
+7fc8e3648000-7fc8e364c000 r-xp 00000000 08:01 12359213                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_stl.so
+7fc8e364c000-7fc8e384c000 ---p 00004000 08:01 12359213                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_stl.so
+7fc8e384c000-7fc8e384d000 rw-p 00004000 08:01 12359213                   /home/ellabuser/altera/15.1/quartus/linux64/libmega_stl.so
+7fc8e384d000-7fc8e3853000 r-xp 00000000 08:01 12359474                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_tb2.so
+7fc8e3853000-7fc8e3a52000 ---p 00006000 08:01 12359474                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_tb2.so
+7fc8e3a52000-7fc8e3a53000 rw-p 00005000 08:01 12359474                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_tb2.so
+7fc8e3a53000-7fc8e3a5f000 r-xp 00000000 08:01 12359556                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hinf.so
+7fc8e3a5f000-7fc8e3c5f000 ---p 0000c000 08:01 12359556                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hinf.so
+7fc8e3c5f000-7fc8e3c61000 rw-p 0000c000 08:01 12359556                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hinf.so
+7fc8e3c61000-7fc8e3da9000 r-xp 00000000 08:01 12358349                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_constra.so
+7fc8e3da9000-7fc8e3fa8000 ---p 00148000 08:01 12358349                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_constra.so
+7fc8e3fa8000-7fc8e3fb1000 rw-p 00147000 08:01 12358349                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_constra.so
+7fc8e3fb1000-7fc8e3fb2000 rw-p 00000000 00:00 0 
+7fc8e3fb2000-7fc8e3ff7000 r-xp 00000000 08:01 12358626                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_mgr.so
+7fc8e3ff7000-7fc8e41f7000 ---p 00045000 08:01 12358626                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_mgr.so
+7fc8e41f7000-7fc8e41fa000 rw-p 00045000 08:01 12358626                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_mgr.so
+7fc8e41fa000-7fc8e41fb000 rw-p 00000000 00:00 0 
+7fc8e41fb000-7fc8e423f000 r-xp 00000000 08:01 12359253                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_ibr.so
+7fc8e423f000-7fc8e443e000 ---p 00044000 08:01 12359253                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_ibr.so
+7fc8e443e000-7fc8e4444000 rw-p 00043000 08:01 12359253                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_ibr.so
+7fc8e4444000-7fc8e4445000 rw-p 00000000 00:00 0 
+7fc8e4445000-7fc8e4458000 r-xp 00000000 08:01 12359230                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_bcm.so
+7fc8e4458000-7fc8e4658000 ---p 00013000 08:01 12359230                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_bcm.so
+7fc8e4658000-7fc8e4659000 rw-p 00013000 08:01 12359230                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_bcm.so
+7fc8e4659000-7fc8e468f000 r-xp 00000000 08:01 12359333                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_cfg.so
+7fc8e468f000-7fc8e488e000 ---p 00036000 08:01 12359333                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_cfg.so
+7fc8e488e000-7fc8e4893000 rw-p 00035000 08:01 12359333                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_u2b_cfg.so
+7fc8e4893000-7fc8e4895000 rw-p 00000000 00:00 0 
+7fc8e4895000-7fc8e492d000 r-xp 00000000 08:01 12358609                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_re.so
+7fc8e492d000-7fc8e4b2c000 ---p 00098000 08:01 12358609                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_re.so
+7fc8e4b2c000-7fc8e4b34000 rw-p 00097000 08:01 12358609                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_re.so
+7fc8e4b34000-7fc8e4b36000 rw-p 00000000 00:00 0 
+7fc8e4b36000-7fc8e4b64000 r-xp 00000000 08:01 12358224                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_a2c.so
+7fc8e4b64000-7fc8e4d64000 ---p 0002e000 08:01 12358224                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_a2c.so
+7fc8e4d64000-7fc8e4d66000 rw-p 0002e000 08:01 12358224                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_a2c.so
+7fc8e4d66000-7fc8e4d78000 r-xp 00000000 08:01 12359504                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_msf.so
+7fc8e4d78000-7fc8e4f78000 ---p 00012000 08:01 12359504                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_msf.so
+7fc8e4f78000-7fc8e4f79000 rw-p 00012000 08:01 12359504                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_msf.so
+7fc8e4f79000-7fc8e4f7a000 rw-p 00000000 00:00 0 
+7fc8e4f7a000-7fc8e4fad000 r-xp 00000000 08:01 12359770                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut_dev.so
+7fc8e4fad000-7fc8e51ad000 ---p 00033000 08:01 12359770                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut_dev.so
+7fc8e51ad000-7fc8e51af000 rw-p 00033000 08:01 12359770                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cut_dev.so
+7fc8e51af000-7fc8e5222000 r-xp 00000000 08:01 12359627                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dbcm.so
+7fc8e5222000-7fc8e5421000 ---p 00073000 08:01 12359627                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dbcm.so
+7fc8e5421000-7fc8e5424000 rw-p 00072000 08:01 12359627                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dbcm.so
+7fc8e5424000-7fc8e5426000 rw-p 00000000 00:00 0 
+7fc8e5426000-7fc8e544d000 r-xp 00000000 08:01 12358196                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_ihc.so
+7fc8e544d000-7fc8e564d000 ---p 00027000 08:01 12358196                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_ihc.so
+7fc8e564d000-7fc8e564e000 rw-p 00027000 08:01 12358196                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_ihc.so
+7fc8e564e000-7fc8e564f000 rw-p 00000000 00:00 0 
+7fc8e564f000-7fc8e5691000 r-xp 00000000 08:01 12359828                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_generic.so
+7fc8e5691000-7fc8e5891000 ---p 00042000 08:01 12359828                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_generic.so
+7fc8e5891000-7fc8e5896000 rw-p 00042000 08:01 12359828                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_generic.so
+7fc8e5896000-7fc8e5898000 r-xp 00000000 08:01 12359730                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal.so
+7fc8e5898000-7fc8e5a97000 ---p 00002000 08:01 12359730                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal.so
+7fc8e5a97000-7fc8e5a98000 rw-p 00001000 08:01 12359730                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal.so
+7fc8e5a98000-7fc8e5aca000 r-xp 00000000 08:01 12359484                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_emif.so
+7fc8e5aca000-7fc8e5cc9000 ---p 00032000 08:01 12359484                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_emif.so
+7fc8e5cc9000-7fc8e5ccb000 rw-p 00031000 08:01 12359484                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_emif.so
+7fc8e5ccb000-7fc8e5d2a000 r-xp 00000000 08:01 12358296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_lvds.so
+7fc8e5d2a000-7fc8e5f2a000 ---p 0005f000 08:01 12358296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_lvds.so
+7fc8e5f2a000-7fc8e5f2c000 rw-p 0005f000 08:01 12358296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_lvds.so
+7fc8e5f2c000-7fc8e5f80000 r-xp 00000000 08:01 12358867                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_nf_hssi.so
+7fc8e5f80000-7fc8e617f000 ---p 00054000 08:01 12358867                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_nf_hssi.so
+7fc8e617f000-7fc8e6181000 rw-p 00053000 08:01 12358867                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_nf_hssi.so
+7fc8e6181000-7fc8e6ac5000 r-xp 00000000 08:01 12358989                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_hssi.so
+7fc8e6ac5000-7fc8e6cc4000 ---p 00944000 08:01 12358989                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_hssi.so
+7fc8e6cc4000-7fc8e6cdf000 rw-p 00943000 08:01 12358989                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_hssi.so
+7fc8e6cdf000-7fc8e6ce1000 rw-p 00000000 00:00 0 
+7fc8e6ce1000-7fc8e6dba000 r-xp 00000000 08:01 12359654                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_cv_pll.so
+7fc8e6dba000-7fc8e6fba000 ---p 000d9000 08:01 12359654                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_cv_pll.so
+7fc8e6fba000-7fc8e6fbd000 rw-p 000d9000 08:01 12359654                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_cv_pll.so
+7fc8e6fbd000-7fc8e70a7000 r-xp 00000000 08:01 12358706                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_pll.so
+7fc8e70a7000-7fc8e72a7000 ---p 000ea000 08:01 12358706                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_pll.so
+7fc8e72a7000-7fc8e72aa000 rw-p 000ea000 08:01 12358706                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_av_pll.so
+7fc8e72aa000-7fc8e8388000 r-xp 00000000 08:01 12358586                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_generic.so
+7fc8e8388000-7fc8e8587000 ---p 010de000 08:01 12358586                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_generic.so
+7fc8e8587000-7fc8e85b6000 rw-p 010dd000 08:01 12358586                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_generic.so
+7fc8e85b6000-7fc8e85ba000 rw-p 00000000 00:00 0 
+7fc8e85ba000-7fc8e85c3000 r-xp 00000000 08:01 12359536                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_util.so
+7fc8e85c3000-7fc8e87c2000 ---p 00009000 08:01 12359536                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_util.so
+7fc8e87c2000-7fc8e87c3000 rw-p 00008000 08:01 12359536                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cal_util.so
+7fc8e87c3000-7fc8e88d7000 r-xp 00000000 08:01 12359376                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_nlspc.so
+7fc8e88d7000-7fc8e8ad6000 ---p 00114000 08:01 12359376                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_nlspc.so
+7fc8e8ad6000-7fc8e8adc000 rw-p 00113000 08:01 12359376                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_nlspc.so
+7fc8e8adc000-7fc8e8ae0000 rw-p 00000000 00:00 0 
+7fc8e8ae0000-7fc8e8af8000 r-xp 00000000 08:01 12358587                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_superlu.so
+7fc8e8af8000-7fc8e8cf8000 ---p 00018000 08:01 12358587                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_superlu.so
+7fc8e8cf8000-7fc8e8cf9000 rw-p 00018000 08:01 12358587                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_superlu.so
+7fc8e8cf9000-7fc8e8d00000 r-xp 00000000 08:01 12359105                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_blas.so
+7fc8e8d00000-7fc8e8eff000 ---p 00007000 08:01 12359105                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_blas.so
+7fc8e8eff000-7fc8e8f00000 rw-p 00006000 08:01 12359105                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_blas.so
+7fc8e8f00000-7fc8e8f53000 r-xp 00000000 08:01 12359656                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_metis.so
+7fc8e8f53000-7fc8e9152000 ---p 00053000 08:01 12359656                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_metis.so
+7fc8e9152000-7fc8e9153000 rw-p 00052000 08:01 12359656                   /home/ellabuser/altera/15.1/quartus/linux64/libtsm_metis.so
+7fc8e9153000-7fc8e9353000 rw-p 00000000 00:00 0 
+7fc8e9353000-7fc8e93f1000 r-xp 00000000 08:01 12358637                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll.so
+7fc8e93f1000-7fc8e95f1000 ---p 0009e000 08:01 12358637                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll.so
+7fc8e95f1000-7fc8e95f4000 rw-p 0009e000 08:01 12358637                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll.so
+7fc8e95f4000-7fc8e95fb000 r-xp 00000000 08:01 12358390                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rbc_util.so
+7fc8e95fb000-7fc8e97fb000 ---p 00007000 08:01 12358390                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rbc_util.so
+7fc8e97fb000-7fc8e97fc000 rw-p 00007000 08:01 12358390                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rbc_util.so
+7fc8e97fc000-7fc8e982a000 r-xp 00000000 08:01 12358635                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_cga.so
+7fc8e982a000-7fc8e9a29000 ---p 0002e000 08:01 12358635                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_cga.so
+7fc8e9a29000-7fc8e9a2d000 rw-p 0002d000 08:01 12358635                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_cga.so
+7fc8e9a2d000-7fc8e9abd000 rw-p 00000000 00:00 0 
+7fc8e9abd000-7fc8e9ae1000 r-xp 00000000 08:01 12358986                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_factory.so
+7fc8e9ae1000-7fc8e9ce1000 ---p 00024000 08:01 12358986                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_factory.so
+7fc8e9ce1000-7fc8e9ce3000 rw-p 00024000 08:01 12358986                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_factory.so
+7fc8e9ce3000-7fc8e9d68000 r-xp 00000000 08:01 12358954                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_syn.so
+7fc8e9d68000-7fc8e9f68000 ---p 00085000 08:01 12358954                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_syn.so
+7fc8e9f68000-7fc8e9f81000 rw-p 00085000 08:01 12358954                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_syn.so
+7fc8e9f81000-7fc8ea2d4000 r-xp 00000000 08:01 12358557                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cyclonev.so
+7fc8ea2d4000-7fc8ea4d4000 ---p 00353000 08:01 12358557                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cyclonev.so
+7fc8ea4d4000-7fc8ea565000 rw-p 00353000 08:01 12358557                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cyclonev.so
+7fc8ea565000-7fc8ea567000 rw-p 00000000 00:00 0 
+7fc8ea567000-7fc8eb171000 r-xp 00000000 08:01 12359787                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arriav.so
+7fc8eb171000-7fc8eb370000 ---p 00c0a000 08:01 12359787                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arriav.so
+7fc8eb370000-7fc8eb605000 rw-p 00c09000 08:01 12359787                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arriav.so
+7fc8eb605000-7fc8eb60c000 rw-p 00000000 00:00 0 
+7fc8eb60c000-7fc8eb972000 r-xp 00000000 08:01 12358774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nadder.so
+7fc8eb972000-7fc8ebb72000 ---p 00366000 08:01 12358774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nadder.so
+7fc8ebb72000-7fc8ebc30000 rw-p 00366000 08:01 12358774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nadder.so
+7fc8ebc30000-7fc8ebc32000 rw-p 00000000 00:00 0 
+7fc8ebc32000-7fc8ebf57000 r-xp 00000000 08:01 12359866                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nightfury.so
+7fc8ebf57000-7fc8ec157000 ---p 00325000 08:01 12359866                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nightfury.so
+7fc8ec157000-7fc8ec205000 rw-p 00325000 08:01 12359866                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_nightfury.so
+7fc8ec205000-7fc8ec207000 rw-p 00000000 00:00 0 
+7fc8ec207000-7fc8ec24d000 r-xp 00000000 08:01 12358697                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_dynamic.so
+7fc8ec24d000-7fc8ec44d000 ---p 00046000 08:01 12358697                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_dynamic.so
+7fc8ec44d000-7fc8ec452000 rw-p 00046000 08:01 12358697                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_dynamic.so
+7fc8ec452000-7fc8ecda4000 r-xp 00000000 08:01 12358965                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stratixv.so
+7fc8ecda4000-7fc8ecfa3000 ---p 00952000 08:01 12358965                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stratixv.so
+7fc8ecfa3000-7fc8ed18f000 rw-p 00951000 08:01 12358965                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stratixv.so
+7fc8ed18f000-7fc8ed194000 rw-p 00000000 00:00 0 
+7fc8ed194000-7fc8ed424000 r-xp 00000000 08:01 12359848                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_fusion.so
+7fc8ed424000-7fc8ed624000 ---p 00290000 08:01 12359848                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_fusion.so
+7fc8ed624000-7fc8ed6ba000 rw-p 00290000 08:01 12359848                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_fusion.so
+7fc8ed6ba000-7fc8ed6bc000 rw-p 00000000 00:00 0 
+7fc8ed6bc000-7fc8ed99d000 r-xp 00000000 08:01 12358367                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cuda.so
+7fc8ed99d000-7fc8edb9d000 ---p 002e1000 08:01 12358367                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cuda.so
+7fc8edb9d000-7fc8edc47000 rw-p 002e1000 08:01 12358367                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_cuda.so
+7fc8edc47000-7fc8edc49000 rw-p 00000000 00:00 0 
+7fc8edc49000-7fc8edff2000 r-xp 00000000 08:01 12358642                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_titan.so
+7fc8edff2000-7fc8ee1f1000 ---p 003a9000 08:01 12358642                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_titan.so
+7fc8ee1f1000-7fc8ee2c0000 rw-p 003a8000 08:01 12358642                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_titan.so
+7fc8ee2c0000-7fc8ee2c2000 rw-p 00000000 00:00 0 
+7fc8ee2c2000-7fc8ee562000 r-xp 00000000 08:01 12359666                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_tgx.so
+7fc8ee562000-7fc8ee761000 ---p 002a0000 08:01 12359666                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_tgx.so
+7fc8ee761000-7fc8ee7f0000 rw-p 0029f000 08:01 12359666                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_tgx.so
+7fc8ee7f0000-7fc8ee7f1000 rw-p 00000000 00:00 0 
+7fc8ee7f1000-7fc8ee8e6000 r-xp 00000000 08:01 12359312                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stingray.so
+7fc8ee8e6000-7fc8eeae6000 ---p 000f5000 08:01 12359312                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stingray.so
+7fc8eeae6000-7fc8eeb17000 rw-p 000f5000 08:01 12359312                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_stingray.so
+7fc8eeb17000-7fc8eeb18000 rw-p 00000000 00:00 0 
+7fc8eeb18000-7fc8ef1a0000 r-xp 00000000 08:01 12358810                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_hcx.so
+7fc8ef1a0000-7fc8ef3a0000 ---p 00688000 08:01 12358810                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_hcx.so
+7fc8ef3a0000-7fc8ef533000 rw-p 00688000 08:01 12358810                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_hcx.so
+7fc8ef533000-7fc8ef538000 rw-p 00000000 00:00 0 
+7fc8ef538000-7fc8ef6cd000 r-xp 00000000 08:01 12359262                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_ygr.so
+7fc8ef6cd000-7fc8ef8cc000 ---p 00195000 08:01 12359262                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_ygr.so
+7fc8ef8cc000-7fc8ef91e000 rw-p 00194000 08:01 12359262                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_ygr.so
+7fc8ef91e000-7fc8ef91f000 rw-p 00000000 00:00 0 
+7fc8ef91f000-7fc8efbd3000 r-xp 00000000 08:01 12359085                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arm.so
+7fc8efbd3000-7fc8efdd3000 ---p 002b4000 08:01 12359085                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arm.so
+7fc8efdd3000-7fc8efe69000 rw-p 002b4000 08:01 12359085                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_arm.so
+7fc8efe69000-7fc8efe6b000 rw-p 00000000 00:00 0 
+7fc8efe6b000-7fc8effc9000 r-xp 00000000 08:01 12359373                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom.so
+7fc8effc9000-7fc8f01c9000 ---p 0015e000 08:01 12359373                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom.so
+7fc8f01c9000-7fc8f01e2000 rw-p 0015e000 08:01 12359373                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom.so
+7fc8f01e2000-7fc8f01e3000 rw-p 00000000 00:00 0 
+7fc8f01e3000-7fc8f01f0000 r-xp 00000000 08:01 12359591                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dloc.so
+7fc8f01f0000-7fc8f03f0000 ---p 0000d000 08:01 12359591                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dloc.so
+7fc8f03f0000-7fc8f03f1000 rw-p 0000d000 08:01 12359591                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dloc.so
+7fc8f03f1000-7fc8f05d1000 r-xp 00000000 08:01 12359565                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_db.so
+7fc8f05d1000-7fc8f07d1000 ---p 001e0000 08:01 12359565                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_db.so
+7fc8f07d1000-7fc8f085b000 rw-p 001e0000 08:01 12359565                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_db.so
+7fc8f085b000-7fc8f0882000 rw-p 00000000 00:00 0 
+7fc8f0882000-7fc8f0d66000 r-xp 00000000 08:01 12359778                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_sgate.so
+7fc8f0d66000-7fc8f0f65000 ---p 004e4000 08:01 12359778                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_sgate.so
+7fc8f0f65000-7fc8f0f7f000 rw-p 004e3000 08:01 12359778                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_sgate.so
+7fc8f0f7f000-7fc8f0f85000 rw-p 00000000 00:00 0 
+7fc8f0f85000-7fc8f100e000 r-xp 00000000 08:01 12358740                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idu.so
+7fc8f100e000-7fc8f120e000 ---p 00089000 08:01 12358740                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idu.so
+7fc8f120e000-7fc8f1213000 rw-p 00089000 08:01 12358740                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_idu.so
+7fc8f1213000-7fc8f12f8000 r-xp 00000000 08:01 12359217                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rdb.so
+7fc8f12f8000-7fc8f14f7000 ---p 000e5000 08:01 12359217                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rdb.so
+7fc8f14f7000-7fc8f1504000 rw-p 000e4000 08:01 12359217                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rdb.so
+7fc8f1504000-7fc8f1506000 rw-p 00000000 00:00 0 
+7fc8f1506000-7fc8f150c000 r-xp 00000000 08:01 12359699                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rstr.so
+7fc8f150c000-7fc8f170b000 ---p 00006000 08:01 12359699                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rstr.so
+7fc8f170b000-7fc8f170c000 rw-p 00005000 08:01 12359699                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_rstr.so
+7fc8f170c000-7fc8f171b000 r-xp 00000000 08:01 12359361                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbmui.so
+7fc8f171b000-7fc8f191a000 ---p 0000f000 08:01 12359361                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbmui.so
+7fc8f191a000-7fc8f191c000 rw-p 0000e000 08:01 12359361                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbmui.so
+7fc8f191c000-7fc8f192a000 r-xp 00000000 08:01 12359701                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_flow_util.so
+7fc8f192a000-7fc8f1b2a000 ---p 0000e000 08:01 12359701                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_flow_util.so
+7fc8f1b2a000-7fc8f1b2b000 rw-p 0000e000 08:01 12359701                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_flow_util.so
+7fc8f1b2b000-7fc8f1ba8000 r-xp 00000000 08:01 12358649                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_kpt.so
+7fc8f1ba8000-7fc8f1da8000 ---p 0007d000 08:01 12358649                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_kpt.so
+7fc8f1da8000-7fc8f1dad000 rw-p 0007d000 08:01 12358649                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_kpt.so
+7fc8f1dad000-7fc8f1dea000 r-xp 00000000 08:01 12359221                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pllc.so
+7fc8f1dea000-7fc8f1fe9000 ---p 0003d000 08:01 12359221                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pllc.so
+7fc8f1fe9000-7fc8f1feb000 rw-p 0003c000 08:01 12359221                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pllc.so
+7fc8f1feb000-7fc8f204f000 r-xp 00000000 08:01 12359774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb.so
+7fc8f204f000-7fc8f224e000 ---p 00064000 08:01 12359774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb.so
+7fc8f224e000-7fc8f2253000 rw-p 00063000 08:01 12359774                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb.so
+7fc8f2253000-7fc8f2254000 rw-p 00000000 00:00 0 
+7fc8f2254000-7fc8f225a000 r-xp 00000000 08:01 12359689                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hut.so
+7fc8f225a000-7fc8f2459000 ---p 00006000 08:01 12359689                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hut.so
+7fc8f2459000-7fc8f245a000 rw-p 00005000 08:01 12359689                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hut.so
+7fc8f245a000-7fc8f247f000 r-xp 00000000 08:01 12358300                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mio.so
+7fc8f247f000-7fc8f267e000 ---p 00025000 08:01 12358300                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mio.so
+7fc8f267e000-7fc8f2680000 rw-p 00024000 08:01 12358300                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mio.so
+7fc8f2680000-7fc8f2681000 r-xp 00000000 08:01 12359747                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_facade.so
+7fc8f2681000-7fc8f2880000 ---p 00001000 08:01 12359747                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_facade.so
+7fc8f2880000-7fc8f2881000 rw-p 00000000 08:01 12359747                   /home/ellabuser/altera/15.1/quartus/linux64/libcomp_qcu_facade.so
+7fc8f2881000-7fc8f2884000 r-xp 00000000 08:01 12359079                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_autil.so
+7fc8f2884000-7fc8f2a83000 ---p 00003000 08:01 12359079                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_autil.so
+7fc8f2a83000-7fc8f2a84000 rw-p 00002000 08:01 12359079                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_autil.so
+7fc8f2a84000-7fc8f2c40000 r-xp 00000000 08:01 12358376                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hdb.so
+7fc8f2c40000-7fc8f2e3f000 ---p 001bc000 08:01 12358376                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hdb.so
+7fc8f2e3f000-7fc8f2e52000 rw-p 001bb000 08:01 12358376                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_hdb.so
+7fc8f2e52000-7fc8f2e58000 rw-p 00000000 00:00 0 
+7fc8f2e58000-7fc8f2eb6000 r-xp 00000000 08:01 12359171                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_qdb.so
+7fc8f2eb6000-7fc8f30b6000 ---p 0005e000 08:01 12359171                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_qdb.so
+7fc8f30b6000-7fc8f30bc000 rw-p 0005e000 08:01 12359171                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_qdb.so
+7fc8f30bc000-7fc8f30ce000 r-xp 00000000 08:01 12359471                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_afm.so
+7fc8f30ce000-7fc8f32cd000 ---p 00012000 08:01 12359471                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_afm.so
+7fc8f32cd000-7fc8f32cf000 rw-p 00011000 08:01 12359471                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_afm.so
+7fc8f32cf000-7fc8f32dc000 r-xp 00000000 08:01 12359409                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbm.so
+7fc8f32dc000-7fc8f34dc000 ---p 0000d000 08:01 12359409                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbm.so
+7fc8f34dc000-7fc8f34dd000 rw-p 0000d000 08:01 12359409                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbm.so
+7fc8f34dd000-7fc8f36ef000 r-xp 00000000 08:01 12359710                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_acf.so
+7fc8f36ef000-7fc8f38ee000 ---p 00212000 08:01 12359710                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_acf.so
+7fc8f38ee000-7fc8f3960000 rw-p 00211000 08:01 12359710                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_acf.so
+7fc8f3960000-7fc8f3965000 r-xp 00000000 08:01 12359593                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntfq.so
+7fc8f3965000-7fc8f3b64000 ---p 00005000 08:01 12359593                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntfq.so
+7fc8f3b64000-7fc8f3b65000 rw-p 00004000 08:01 12359593                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntfq.so
+7fc8f3b65000-7fc8f3b69000 r-xp 00000000 08:01 12358689                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntf.so
+7fc8f3b69000-7fc8f3d68000 ---p 00004000 08:01 12358689                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntf.so
+7fc8f3d68000-7fc8f3d69000 rw-p 00003000 08:01 12358689                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ntf.so
+7fc8f3d69000-7fc8f3d71000 r-xp 00000000 08:01 12359111                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cksum.so
+7fc8f3d71000-7fc8f3f70000 ---p 00008000 08:01 12359111                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cksum.so
+7fc8f3f70000-7fc8f3f71000 rw-p 00007000 08:01 12359111                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cksum.so
+7fc8f3f71000-7fc8f3f93000 r-xp 00000000 08:01 12359169                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmgr.so
+7fc8f3f93000-7fc8f4193000 ---p 00022000 08:01 12359169                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmgr.so
+7fc8f4193000-7fc8f4194000 rw-p 00022000 08:01 12359169                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmgr.so
+7fc8f4194000-7fc8f4208000 r-xp 00000000 08:01 12358215                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dpow.so
+7fc8f4208000-7fc8f4408000 ---p 00074000 08:01 12358215                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dpow.so
+7fc8f4408000-7fc8f440b000 rw-p 00074000 08:01 12358215                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dpow.so
+7fc8f440b000-7fc8f440c000 rw-p 00000000 00:00 0 
+7fc8f440c000-7fc8f4474000 r-xp 00000000 08:01 12358760                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dtm.so
+7fc8f4474000-7fc8f4674000 ---p 00068000 08:01 12358760                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dtm.so
+7fc8f4674000-7fc8f4679000 rw-p 00068000 08:01 12358760                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dtm.so
+7fc8f4679000-7fc8f467a000 rw-p 00000000 00:00 0 
+7fc8f467a000-7fc8f49d5000 r-xp 00000000 08:01 12359222                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr.so
+7fc8f49d5000-7fc8f4bd4000 ---p 0035b000 08:01 12359222                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr.so
+7fc8f4bd4000-7fc8f4c0f000 rw-p 0035a000 08:01 12359222                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dygr.so
+7fc8f4c0f000-7fc8f4c14000 rw-p 00000000 00:00 0 
+7fc8f4c14000-7fc8f4c52000 r-xp 00000000 08:01 12358681                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmig.so
+7fc8f4c52000-7fc8f4e51000 ---p 0003e000 08:01 12358681                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmig.so
+7fc8f4e51000-7fc8f4e53000 rw-p 0003d000 08:01 12358681                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dmig.so
+7fc8f4e53000-7fc8f4e54000 rw-p 00000000 00:00 0 
+7fc8f4e54000-7fc8f4fa3000 r-xp 00000000 08:01 12359194                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dev.so
+7fc8f4fa3000-7fc8f51a2000 ---p 0014f000 08:01 12359194                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dev.so
+7fc8f51a2000-7fc8f51aa000 rw-p 0014e000 08:01 12359194                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dev.so
+7fc8f51aa000-7fc8f51d6000 rw-p 00000000 00:00 0 
+7fc8f51d6000-7fc8f5326000 r-xp 00000000 08:01 12358826                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt.so
+7fc8f5326000-7fc8f5525000 ---p 00150000 08:01 12358826                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt.so
+7fc8f5525000-7fc8f553d000 rw-p 0014f000 08:01 12358826                   /home/ellabuser/altera/15.1/quartus/linux64/libsys_cpt.so
+7fc8f553d000-7fc8f5543000 rw-p 00000000 00:00 0 
+7fc8f5543000-7fc8f554b000 r-xp 00000000 08:01 12359164                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ipc.so
+7fc8f554b000-7fc8f574a000 ---p 00008000 08:01 12359164                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ipc.so
+7fc8f574a000-7fc8f574b000 rw-p 00007000 08:01 12359164                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ipc.so
+7fc8f574b000-7fc8f6b48000 r-xp 00000000 08:01 12359489                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_astr.so
+7fc8f6b48000-7fc8f6d47000 ---p 013fd000 08:01 12359489                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_astr.so
+7fc8f6d47000-7fc8f6edd000 rw-p 013fc000 08:01 12359489                   /home/ellabuser/altera/15.1/quartus/linux64/libatm_astr.so
+7fc8f6edd000-7fc8f6efc000 rw-p 00000000 00:00 0 
+7fc8f6efc000-7fc8fb82f000 r-xp 00000000 08:01 12358700                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_wys.so
+7fc8fb82f000-7fc8fba2f000 ---p 04933000 08:01 12358700                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_wys.so
+7fc8fba2f000-7fc8fbe9b000 rw-p 04933000 08:01 12358700                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_wys.so
+7fc8fbe9b000-7fc8fc000000 rw-p 00000000 00:00 0 
+7fc8fc000000-7fc8fd762000 rw-p 00000000 00:00 0 
+7fc8fd762000-7fc900000000 ---p 00000000 00:00 0 
+7fc9001d9000-7fc9001f8000 r-xp 00000000 08:01 12359296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_definition.so
+7fc9001f8000-7fc9003f7000 ---p 0001f000 08:01 12359296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_definition.so
+7fc9003f7000-7fc9003fa000 rw-p 0001e000 08:01 12359296                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_cdb_atom_definition.so
+7fc9003fa000-7fc900400000 r-xp 00000000 08:01 12359824                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_put.so
+7fc900400000-7fc900600000 ---p 00006000 08:01 12359824                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_put.so
+7fc900600000-7fc900601000 rw-p 00006000 08:01 12359824                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_put.so
+7fc900601000-7fc90092b000 r-xp 00000000 08:01 12358958                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dstr.so
+7fc90092b000-7fc900b2b000 ---p 0032a000 08:01 12358958                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dstr.so
+7fc900b2b000-7fc900b88000 rw-p 0032a000 08:01 12358958                   /home/ellabuser/altera/15.1/quartus/linux64/libddb_dstr.so
+7fc900b88000-7fc900b96000 r-xp 00000000 08:01 12359831                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_dyn.so
+7fc900b96000-7fc900d95000 ---p 0000e000 08:01 12359831                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_dyn.so
+7fc900d95000-7fc900d97000 rw-p 0000d000 08:01 12359831                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_dyn.so
+7fc900d97000-7fc900fe7000 r-xp 00000000 08:01 12359729                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbs.so
+7fc900fe7000-7fc9011e6000 ---p 00250000 08:01 12359729                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbs.so
+7fc9011e6000-7fc90124c000 rw-p 0024f000 08:01 12359729                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_dbs.so
+7fc90124c000-7fc90126f000 r-xp 00000000 08:01 12358497                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qsym.so
+7fc90126f000-7fc90146e000 ---p 00023000 08:01 12358497                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qsym.so
+7fc90146e000-7fc901470000 rw-p 00022000 08:01 12358497                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qsym.so
+7fc901470000-7fc901472000 r-xp 00000000 08:01 12359282                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_itcl.so
+7fc901472000-7fc901671000 ---p 00002000 08:01 12359282                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_itcl.so
+7fc901671000-7fc901672000 rw-p 00001000 08:01 12359282                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_itcl.so
+7fc901672000-7fc901723000 r-xp 00000000 08:01 12359146                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_msg.so
+7fc901723000-7fc901922000 ---p 000b1000 08:01 12359146                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_msg.so
+7fc901922000-7fc90192b000 rw-p 000b0000 08:01 12359146                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_msg.so
+7fc90192b000-7fc901960000 rw-p 00000000 00:00 0 
+7fc901960000-7fc90196d000 r-xp 00000000 08:01 12359742                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_xml.so
+7fc90196d000-7fc901b6c000 ---p 0000d000 08:01 12359742                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_xml.so
+7fc901b6c000-7fc901b6e000 rw-p 0000c000 08:01 12359742                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_xml.so
+7fc901b6e000-7fc901ead000 r-xp 00000000 08:01 12359893                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so
+7fc901ead000-7fc9020ac000 ---p 0033f000 08:01 12359893                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so
+7fc9020ac000-7fc9020ea000 rw-p 0033e000 08:01 12359893                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so
+7fc9020ea000-7fc9020eb000 rw-p 00000000 00:00 0 
+7fc9020eb000-7fc9020ec000 r-xp 00000000 08:01 12359257                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_interface.so
+7fc9020ec000-7fc9022eb000 ---p 00001000 08:01 12359257                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_interface.so
+7fc9022eb000-7fc9022ec000 rw-p 00000000 08:01 12359257                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_interface.so
+7fc9022ec000-7fc902306000 r-xp 00000000 08:01 12359321                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_big.so
+7fc902306000-7fc902505000 ---p 0001a000 08:01 12359321                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_big.so
+7fc902505000-7fc902506000 rw-p 00019000 08:01 12359321                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_big.so
+7fc902506000-7fc902507000 rw-p 00000000 00:00 0 
+7fc902507000-7fc90251f000 r-xp 00000000 08:01 12358737                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_pdb.so
+7fc90251f000-7fc90271e000 ---p 00018000 08:01 12358737                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_pdb.so
+7fc90271e000-7fc902720000 rw-p 00017000 08:01 12358737                   /home/ellabuser/altera/15.1/quartus/linux64/libdb_pdb.so
+7fc902720000-7fc902727000 r-xp 00000000 08:01 12358941                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_tst.so
+7fc902727000-7fc902927000 ---p 00007000 08:01 12358941                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_tst.so
+7fc902927000-7fc902928000 rw-p 00007000 08:01 12358941                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_tst.so
+7fc902928000-7fc90294a000 r-xp 00000000 08:01 12359939                   /home/ellabuser/altera/15.1/quartus/linux64/liblzma.so.5
+7fc90294a000-7fc902a49000 ---p 00022000 08:01 12359939                   /home/ellabuser/altera/15.1/quartus/linux64/liblzma.so.5
+7fc902a49000-7fc902a4a000 rw-p 00021000 08:01 12359939                   /home/ellabuser/altera/15.1/quartus/linux64/liblzma.so.5
+7fc902a4a000-7fc902a4d000 r-xp 00000000 08:01 12359271                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_clw.so
+7fc902a4d000-7fc902c4d000 ---p 00003000 08:01 12359271                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_clw.so
+7fc902c4d000-7fc902c4e000 rw-p 00003000 08:01 12359271                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_clw.so
+7fc902c4e000-7fc902c93000 r-xp 00000000 08:01 12358313                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_atcl.so
+7fc902c93000-7fc902e93000 ---p 00045000 08:01 12358313                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_atcl.so
+7fc902e93000-7fc902e97000 rw-p 00045000 08:01 12358313                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_atcl.so
+7fc902e97000-7fc902eb3000 r-xp 00000000 08:01 12359227                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fstr.so
+7fc902eb3000-7fc9030b3000 ---p 0001c000 08:01 12359227                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fstr.so
+7fc9030b3000-7fc9030b7000 rw-p 0001c000 08:01 12359227                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fstr.so
+7fc9030b7000-7fc9030dd000 r-xp 00000000 08:01 12359785                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl.so
+7fc9030dd000-7fc9032dd000 ---p 00026000 08:01 12359785                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl.so
+7fc9032dd000-7fc9032e2000 rw-p 00026000 08:01 12359785                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_qtl.so
+7fc9032e2000-7fc903305000 r-xp 00000000 08:01 12358350                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cfg_ini.so
+7fc903305000-7fc903504000 ---p 00023000 08:01 12358350                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cfg_ini.so
+7fc903504000-7fc903509000 rw-p 00022000 08:01 12358350                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_cfg_ini.so
+7fc903509000-7fc90350a000 rw-p 00000000 00:00 0 
+7fc90350a000-7fc903527000 r-xp 00000000 08:01 12359636                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_zlib.so
+7fc903527000-7fc903726000 ---p 0001d000 08:01 12359636                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_zlib.so
+7fc903726000-7fc903727000 rw-p 0001c000 08:01 12359636                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_zlib.so
+7fc903727000-7fc903781000 r-xp 00000000 08:01 12359797                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_gen.so
+7fc903781000-7fc903981000 ---p 0005a000 08:01 12359797                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_gen.so
+7fc903981000-7fc903983000 rw-p 0005a000 08:01 12359797                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_gen.so
+7fc903983000-7fc903984000 rw-p 00000000 00:00 0 
+7fc903984000-7fc9039aa000 r-xp 00000000 08:01 12359167                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fio.so
+7fc9039aa000-7fc903ba9000 ---p 00026000 08:01 12359167                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fio.so
+7fc903ba9000-7fc903bae000 rw-p 00025000 08:01 12359167                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_fio.so
+7fc903bae000-7fc903bce000 r-xp 00000000 08:01 12359302                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_dyn.so
+7fc903bce000-7fc903dce000 ---p 00020000 08:01 12359302                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_dyn.so
+7fc903dce000-7fc903dcf000 rw-p 00020000 08:01 12359302                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_dyn.so
+7fc903dcf000-7fc903df0000 r-xp 00000000 08:01 12358431                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_err.so
+7fc903df0000-7fc903ff0000 ---p 00021000 08:01 12358431                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_err.so
+7fc903ff0000-7fc903ff2000 rw-p 00021000 08:01 12358431                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_err.so
+7fc903ff2000-7fc904000000 rw-p 00000000 00:00 0 
+7fc904000000-7fc904024000 rw-p 00000000 00:00 0 
+7fc904024000-7fc908000000 ---p 00000000 00:00 0 
+7fc908000000-7fc90b746000 rw-p 00000000 00:00 0 
+7fc90b746000-7fc90c000000 ---p 00000000 00:00 0 
+7fc90c0fc000-7fc90c103000 r-xp 00000000 08:01 12359229                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ver.so
+7fc90c103000-7fc90c303000 ---p 00007000 08:01 12359229                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ver.so
+7fc90c303000-7fc90c304000 rw-p 00007000 08:01 12359229                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_ver.so
+7fc90c304000-7fc90c305000 r-xp 00000000 08:01 12359702                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_native.so
+7fc90c305000-7fc90c504000 ---p 00001000 08:01 12359702                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_native.so
+7fc90c504000-7fc90c505000 rw-p 00000000 08:01 12359702                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_mem_native.so
+7fc90c505000-7fc90c507000 r-xp 00000000 08:01 12359081                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll_tcl.so
+7fc90c507000-7fc90c706000 ---p 00002000 08:01 12359081                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll_tcl.so
+7fc90c706000-7fc90c707000 rw-p 00001000 08:01 12359081                   /home/ellabuser/altera/15.1/quartus/linux64/libqcl_pll_tcl.so
+7fc90c707000-7fc90c907000 rw-p 00000000 00:00 0 
+7fc90c907000-7fc90cb07000 rw-p 00000000 00:00 0 
+7fc90cb07000-7fc90cb1e000 r-xp 00000000 08:01 7609129                    /lib/x86_64-linux-gnu/libresolv-2.23.so
+7fc90cb1e000-7fc90cd1e000 ---p 00017000 08:01 7609129                    /lib/x86_64-linux-gnu/libresolv-2.23.so
+7fc90cd1e000-7fc90cd1f000 r--p 00017000 08:01 7609129                    /lib/x86_64-linux-gnu/libresolv-2.23.so
+7fc90cd1f000-7fc90cd20000 rw-p 00018000 08:01 7609129                    /lib/x86_64-linux-gnu/libresolv-2.23.so
+7fc90cd20000-7fc90cd22000 rw-p 00000000 00:00 0 
+7fc90cd22000-7fc90cd27000 r-xp 00000000 08:01 7609135                    /lib/x86_64-linux-gnu/libnss_dns-2.23.so
+7fc90cd27000-7fc90cf27000 ---p 00005000 08:01 7609135                    /lib/x86_64-linux-gnu/libnss_dns-2.23.so
+7fc90cf27000-7fc90cf28000 r--p 00005000 08:01 7609135                    /lib/x86_64-linux-gnu/libnss_dns-2.23.so
+7fc90cf28000-7fc90cf29000 rw-p 00006000 08:01 7609135                    /lib/x86_64-linux-gnu/libnss_dns-2.23.so
+7fc90cf29000-7fc90cf2b000 r-xp 00000000 08:01 7606847                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc90cf2b000-7fc90d12a000 ---p 00002000 08:01 7606847                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc90d12a000-7fc90d12b000 r--p 00001000 08:01 7606847                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc90d12b000-7fc90d12c000 rw-p 00002000 08:01 7606847                    /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+7fc90d12c000-7fc90d4a3000 r-xp 00000000 08:01 3021463                    /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so
+7fc90d4a3000-7fc90d6a2000 ---p 00377000 08:01 3021463                    /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so
+7fc90d6a2000-7fc90d6cb000 rw-p 00376000 08:01 3021463                    /home/ellabuser/altera/15.1/quartus/cusp/bin/libcusp151_parser.so
+7fc90d6cb000-7fc90d716000 rw-p 00000000 00:00 0 
+7fc90d716000-7fc90d71e000 r-xp 00000000 08:01 13774443                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libmanagement.so
+7fc90d71e000-7fc90d91e000 ---p 00008000 08:01 13774443                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libmanagement.so
+7fc90d91e000-7fc90d91f000 rw-p 00008000 08:01 13774443                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libmanagement.so
+7fc90d91f000-7fc90db1f000 rw-p 00000000 00:00 0 
+7fc90db1f000-7fc90dd1f000 rw-p 00000000 00:00 0 
+7fc90dd1f000-7fc90df1f000 rw-p 00000000 00:00 0 
+7fc90df1f000-7fc90df22000 ---p 00000000 00:00 0 
+7fc90df22000-7fc90e020000 rwxp 00000000 00:00 0 
+7fc90e020000-7fc90e220000 rw-p 00000000 00:00 0 
+7fc90e220000-7fc90e420000 rw-p 00000000 00:00 0 
+7fc90e420000-7fc90e421000 ---p 00000000 00:00 0 
+7fc90e421000-7fc90ee21000 rwxp 00000000 00:00 0 
+7fc90ee21000-7fc90ee8f000 r-xp 00000000 08:01 12359978                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so
+7fc90ee8f000-7fc90f08f000 ---p 0006e000 08:01 12359978                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so
+7fc90f08f000-7fc90f093000 rw-p 0006e000 08:01 12359978                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so
+7fc90f093000-7fc90f0a9000 r-xp 00000000 08:01 12359908                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so
+7fc90f0a9000-7fc90f2a9000 ---p 00016000 08:01 12359908                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so
+7fc90f2a9000-7fc90f2aa000 rw-p 00016000 08:01 12359908                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so
+7fc90f2aa000-7fc90f38c000 r-xp 00000000 08:01 12359922                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so
+7fc90f38c000-7fc90f58c000 ---p 000e2000 08:01 12359922                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so
+7fc90f58c000-7fc90f592000 rw-p 000e2000 08:01 12359922                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so
+7fc90f592000-7fc90fe00000 r--p 00000000 08:01 12359929                   /home/ellabuser/altera/15.1/quartus/linux64/libicudata.so.34
+7fc90fe00000-7fc90ffff000 ---p 0086e000 08:01 12359929                   /home/ellabuser/altera/15.1/quartus/linux64/libicudata.so.34
+7fc90ffff000-7fc910000000 rw-p 0086d000 08:01 12359929                   /home/ellabuser/altera/15.1/quartus/linux64/libicudata.so.34
+7fc910000000-7fc910021000 rw-p 00000000 00:00 0 
+7fc910021000-7fc914000000 ---p 00000000 00:00 0 
+7fc914000000-7fc914001000 r--s 00000000 08:01 4208053                    /var/cache/fontconfig/087e1975ba9a574b140bb1df193bf770-le64.cache-6
+7fc914001000-7fc91400c000 r--s 00000000 08:01 4194398                    /var/cache/fontconfig/945677eb7aeaf62f1d50efc3fb3ec7d8-le64.cache-6
+7fc91400c000-7fc91400e000 r--s 00000000 08:01 4209087                    /var/cache/fontconfig/99e8ed0e538f840c565b6ed5dad60d56-le64.cache-6
+7fc91400e000-7fc914017000 r--s 00000000 08:01 4209080                    /var/cache/fontconfig/a6d8cf8e4ec09cdbc8633c31745a07dd-le64.cache-6
+7fc914017000-7fc91401d000 r--s 00000000 08:01 4194380                    /var/cache/fontconfig/2cd17615ca594fa2959ae173292e504c-le64.cache-6
+7fc91401d000-7fc91401e000 r--s 00000000 08:01 4194377                    /var/cache/fontconfig/0d8c3b2ac0904cb8a57a757ad11a4a08-le64.cache-6
+7fc91401e000-7fc914033000 r--s 00000000 08:01 4194374                    /var/cache/fontconfig/04aabc0a78ac019cf9454389977116d2-le64.cache-6
+7fc914033000-7fc914037000 r--s 00000000 08:01 4194384                    /var/cache/fontconfig/385c0604a188198f04d133e54aba7fe7-le64.cache-6
+7fc914037000-7fc91403c000 r--s 00000000 08:01 4194397                    /var/cache/fontconfig/8801497958630a81b71ace7c5f9b32a8-le64.cache-6
+7fc91403c000-7fc914077000 r--s 00000000 08:01 4203897                    /var/cache/fontconfig/365b55f210c0a22e9a19e35191240f32-le64.cache-6
+7fc914077000-7fc91407d000 r--s 00000000 08:01 4207798                    /var/cache/fontconfig/ca37dee8d6057f2a069c1b3d05990269-le64.cache-6
+7fc91407d000-7fc914084000 r--s 00000000 08:01 4194381                    /var/cache/fontconfig/3047814df9a2f067bd2d96a2b9c36e5a-le64.cache-6
+7fc914084000-7fc91408c000 r--s 00000000 08:01 4208052                    /var/cache/fontconfig/bf3b770c553c462765856025a94f1ce6-le64.cache-6
+7fc91408c000-7fc91408f000 r-xp 00000000 08:01 12359917                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so
+7fc91408f000-7fc91428e000 ---p 00003000 08:01 12359917                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so
+7fc91428e000-7fc91428f000 rw-p 00002000 08:01 12359917                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so
+7fc91428f000-7fc91429e000 r-xp 00000000 08:01 12359314                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_thr.so
+7fc91429e000-7fc91449d000 ---p 0000f000 08:01 12359314                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_thr.so
+7fc91449d000-7fc91449e000 rw-p 0000e000 08:01 12359314                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_thr.so
+7fc91449e000-7fc9144c0000 rw-p 00000000 00:00 0 
+7fc9144c0000-7fc9144c2000 r-xp 00000000 08:01 12359966                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc_proxy.so.2
+7fc9144c2000-7fc9146c2000 ---p 00002000 08:01 12359966                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc_proxy.so.2
+7fc9146c2000-7fc9146c3000 rw-p 00002000 08:01 12359966                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc_proxy.so.2
+7fc9146c3000-7fc9147dc000 r-xp 00000000 08:01 12359900                   /home/ellabuser/altera/15.1/quartus/linux64/libicuuc.so.34
+7fc9147dc000-7fc9149db000 ---p 00119000 08:01 12359900                   /home/ellabuser/altera/15.1/quartus/linux64/libicuuc.so.34
+7fc9149db000-7fc9149e8000 rw-p 00118000 08:01 12359900                   /home/ellabuser/altera/15.1/quartus/linux64/libicuuc.so.34
+7fc9149e8000-7fc9149e9000 rw-p 00000000 00:00 0 
+7fc9149e9000-7fc914d28000 r-xp 00000000 08:01 12360005                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so.26
+7fc914d28000-7fc914f27000 ---p 0033f000 08:01 12360005                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so.26
+7fc914f27000-7fc914f65000 rw-p 0033e000 08:01 12360005                   /home/ellabuser/altera/15.1/quartus/linux64/libaxerces-c.so.26
+7fc914f65000-7fc914f66000 rw-p 00000000 00:00 0 
+7fc914f66000-7fc91510f000 r-xp 00000000 08:01 12359894                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl8.6.so
+7fc91510f000-7fc91530f000 ---p 001a9000 08:01 12359894                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl8.6.so
+7fc91530f000-7fc91531f000 rw-p 001a9000 08:01 12359894                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl8.6.so
+7fc91531f000-7fc915320000 rw-p 00000000 00:00 0 
+7fc915320000-7fc915352000 r-xp 00000000 08:01 12359969                   /home/ellabuser/altera/15.1/quartus/linux64/libtbb.so.2
+7fc915352000-7fc915552000 ---p 00032000 08:01 12359969                   /home/ellabuser/altera/15.1/quartus/linux64/libtbb.so.2
+7fc915552000-7fc915556000 rw-p 00032000 08:01 12359969                   /home/ellabuser/altera/15.1/quartus/linux64/libtbb.so.2
+7fc915556000-7fc915558000 rw-p 00000000 00:00 0 
+7fc915558000-7fc91556f000 r-xp 00000000 08:01 12360017                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc.so.2
+7fc91556f000-7fc91576f000 ---p 00017000 08:01 12360017                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc.so.2
+7fc91576f000-7fc915772000 rw-p 00017000 08:01 12360017                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbmalloc.so.2
+7fc915772000-7fc916385000 rw-p 00000000 00:00 0 
+7fc916385000-7fc916386000 r-xp 00000000 08:01 12360014                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbamalloc.so
+7fc916386000-7fc916585000 ---p 00001000 08:01 12360014                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbamalloc.so
+7fc916585000-7fc916586000 rw-p 00000000 08:01 12360014                   /home/ellabuser/altera/15.1/quartus/linux64/libtbbamalloc.so
+7fc916586000-7fc91658c000 r-xp 00000000 08:01 12358229                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl_jni_bridge.so
+7fc91658c000-7fc91678b000 ---p 00006000 08:01 12358229                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl_jni_bridge.so
+7fc91678b000-7fc91678c000 rw-p 00005000 08:01 12358229                   /home/ellabuser/altera/15.1/quartus/linux64/libtcl_jni_bridge.so
+7fc91678c000-7fc9168aa000 r-xp 00000000 08:01 12358786                   /home/ellabuser/altera/15.1/quartus/linux64/libsld_filejni.so
+7fc9168aa000-7fc916aaa000 ---p 0011e000 08:01 12358786                   /home/ellabuser/altera/15.1/quartus/linux64/libsld_filejni.so
+7fc916aaa000-7fc916aba000 rw-p 0011e000 08:01 12358786                   /home/ellabuser/altera/15.1/quartus/linux64/libsld_filejni.so
+7fc916aba000-7fc916ac0000 rw-p 00000000 00:00 0 
+7fc916ac0000-7fc916aea000 r-xp 00000000 08:01 13774431                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libdcpr.so
+7fc916aea000-7fc916ce9000 ---p 0002a000 08:01 13774431                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libdcpr.so
+7fc916ce9000-7fc916cec000 rw-p 00029000 08:01 13774431                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libdcpr.so
+7fc916cec000-7fc916eec000 rw-p 00000000 00:00 0 
+7fc916eec000-7fc916fed000 rwxp 00000000 00:00 0 
+7fc916fed000-7fc9171ed000 rw-p 00000000 00:00 0 
+7fc9171ed000-7fc9173ed000 r-xp 00000000 08:01 12359895                   /home/ellabuser/altera/15.1/quartus/linux64/libnlview.so
+7fc9173ed000-7fc9173fc000 rw-p 00200000 08:01 12359895                   /home/ellabuser/altera/15.1/quartus/linux64/libnlview.so
+7fc9173fc000-7fc9175fe000 rw-p 00000000 00:00 0 
+7fc9175fe000-7fc9177fe000 rw-p 00000000 00:00 0 
+7fc9177fe000-7fc9179fe000 rw-p 00000000 00:00 0 
+7fc9179fe000-7fc917a01000 ---p 00000000 00:00 0 
+7fc917a01000-7fc917c00000 rwxp 00000000 00:00 0 
+7fc917c00000-7fc917e00000 rw-p 00000000 00:00 0 
+7fc917e00000-7fc918000000 rw-p 00000000 00:00 0 
+7fc918000000-7fc918021000 rw-p 00000000 00:00 0 
+7fc918021000-7fc91c000000 ---p 00000000 00:00 0 
+7fc91c000000-7fc91c28c000 rw-p 00000000 00:00 0 
+7fc91c28c000-7fc920000000 ---p 00000000 00:00 0 
+7fc920000000-7fc9207fc000 rw-p 00000000 00:00 0 
+7fc9207fc000-7fc924000000 ---p 00000000 00:00 0 
+7fc924000000-7fc924038000 rw-p 00000000 00:00 0 
+7fc924038000-7fc928000000 ---p 00000000 00:00 0 
+7fc928000000-7fc928021000 rw-p 00000000 00:00 0 
+7fc928021000-7fc92c000000 ---p 00000000 00:00 0 
+7fc92c000000-7fc92c001000 r--s 00000000 08:01 4194379                    /var/cache/fontconfig/1ac9eb803944fde146138c791f5cc56a-le64.cache-6
+7fc92c001000-7fc92c004000 r--s 00000000 08:01 4194394                    /var/cache/fontconfig/767a8244fc0220cfb567a839d0392e0b-le64.cache-6
+7fc92c004000-7fc92c00a000 r--s 00000000 08:01 4194402                    /var/cache/fontconfig/b47c4e1ecd0709278f4910c18777a504-le64.cache-6
+7fc92c00a000-7fc92c012000 r--s 00000000 08:01 4209064                    /var/cache/fontconfig/52f7bdb7ce746bfd7eaa1985bd9cfa93-le64.cache-6
+7fc92c012000-7fc92c025000 r--s 00000000 08:01 4194408                    /var/cache/fontconfig/d52a8644073d54c13679302ca1180695-le64.cache-6
+7fc92c025000-7fc92c030000 r--s 00000000 08:01 4209140                    /var/cache/fontconfig/d589a48862398ed80a3d6066f4f56f4c-le64.cache-6
+7fc92c030000-7fc92c03b000 r--s 00000000 08:01 4194396                    /var/cache/fontconfig/83bf95040141907cd45bb53cf7c1c148-le64.cache-6
+7fc92c03b000-7fc92c04d000 r--s 00000000 08:01 4194400                    /var/cache/fontconfig/9b89f8e3dae116d678bbf48e5f21f69b-le64.cache-6
+7fc92c04d000-7fc92c056000 r--s 00000000 08:01 4205249                    /var/cache/fontconfig/d0972c3d32f097851eb916381fc38920-le64.cache-6
+7fc92c056000-7fc92c256000 rw-p 00000000 00:00 0 
+7fc92c256000-7fc92c2bf000 r-xp 00000000 08:01 13774410                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libt2k.so
+7fc92c2bf000-7fc92c4be000 ---p 00069000 08:01 13774410                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libt2k.so
+7fc92c4be000-7fc92c4c5000 rw-p 00068000 08:01 13774410                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libt2k.so
+7fc92c4c5000-7fc92c4d5000 rw-p 00000000 00:00 0 
+7fc92c4d5000-7fc92c4e5000 r-xp 00000000 08:01 13774428                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnio.so
+7fc92c4e5000-7fc92c6e5000 ---p 00010000 08:01 13774428                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnio.so
+7fc92c6e5000-7fc92c6e6000 rw-p 00010000 08:01 13774428                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnio.so
+7fc92c6e6000-7fc92c6e9000 ---p 00000000 00:00 0 
+7fc92c6e9000-7fc92c7e7000 rwxp 00000000 00:00 0 
+7fc92c7e7000-7fc92c7ea000 ---p 00000000 00:00 0 
+7fc92c7ea000-7fc92c8e8000 rwxp 00000000 00:00 0 
+7fc92c8e8000-7fc92c8eb000 ---p 00000000 00:00 0 
+7fc92c8eb000-7fc92c9e9000 rwxp 00000000 00:00 0 
+7fc92c9e9000-7fc92cbe9000 rw-p 00000000 00:00 0 
+7fc92cbe9000-7fc92cde9000 rw-p 00000000 00:00 0 
+7fc92cde9000-7fc92fdea000 rw-p 00000000 00:00 0 
+7fc92fdea000-7fc92fe00000 r-xp 00000000 08:01 13774422                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnet.so
+7fc92fe00000-7fc92ffff000 ---p 00016000 08:01 13774422                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnet.so
+7fc92ffff000-7fc930000000 rw-p 00015000 08:01 13774422                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libnet.so
+7fc930000000-7fc933ff6000 rw-p 00000000 00:00 0 
+7fc933ff6000-7fc934000000 ---p 00000000 00:00 0 
+7fc934000000-7fc934021000 rw-p 00000000 00:00 0 
+7fc934021000-7fc938000000 ---p 00000000 00:00 0 
+7fc938000000-7fc938024000 rw-p 00000000 00:00 0 
+7fc938024000-7fc93c000000 ---p 00000000 00:00 0 
+7fc93c000000-7fc93c274000 rw-p 00000000 00:00 0 
+7fc93c274000-7fc940000000 ---p 00000000 00:00 0 
+7fc940000000-7fc940021000 rw-p 00000000 00:00 0 
+7fc940021000-7fc944000000 ---p 00000000 00:00 0 
+7fc944000000-7fc944021000 rw-p 00000000 00:00 0 
+7fc944021000-7fc948000000 ---p 00000000 00:00 0 
+7fc948000000-7fc94b145000 rw-p 00000000 00:00 0 
+7fc94b145000-7fc94c000000 ---p 00000000 00:00 0 
+7fc94c000000-7fc94dc51000 rw-p 00000000 00:00 0 
+7fc94dc51000-7fc950000000 ---p 00000000 00:00 0 
+7fc950000000-7fc950021000 rw-p 00000000 00:00 0 
+7fc950021000-7fc954000000 ---p 00000000 00:00 0 
+7fc954000000-7fc95687c000 rw-p 00000000 00:00 0 
+7fc95687c000-7fc958000000 ---p 00000000 00:00 0 
+7fc958000000-7fc958021000 rw-p 00000000 00:00 0 
+7fc958021000-7fc95c000000 ---p 00000000 00:00 0 
+7fc95c000000-7fc95c021000 rw-p 00000000 00:00 0 
+7fc95c021000-7fc960000000 ---p 00000000 00:00 0 
+7fc960000000-7fc960838000 rw-p 00000000 00:00 0 
+7fc960838000-7fc964000000 ---p 00000000 00:00 0 
+7fc964000000-7fc964001000 r--s 00000000 08:01 4194411                    /var/cache/fontconfig/dc05db6664285cc2f12bf69c139ae4c3-le64.cache-6
+7fc964001000-7fc964002000 r--s 00000000 08:01 4208845                    /var/cache/fontconfig/4794a0821666d79190d59a36cb4f44b5-le64.cache-6
+7fc964002000-7fc964003000 r--s 00000000 08:01 4194404                    /var/cache/fontconfig/bab58bb527bb656aaa9f116d68a48d89-le64.cache-6
+7fc964003000-7fc964004000 r--s 00000000 08:01 4194388                    /var/cache/fontconfig/56cf4f4769d0f4abc89a4895d7bd3ae1-le64.cache-6
+7fc964004000-7fc964005000 r--s 00000000 08:01 4194403                    /var/cache/fontconfig/b9d506c9ac06c20b433354fa67a72993-le64.cache-6
+7fc964005000-7fc964075000 r--s 006c2000 08:01 3021460                    /home/ellabuser/altera/15.1/quartus/cusp/bin/cusp-engine.jar
+7fc964075000-7fc964176000 rwxp 00000000 00:00 0 
+7fc964176000-7fc964184000 r-xp 00000000 08:01 12360248                   /home/ellabuser/altera/15.1/quartus/linux64/libgomp.so.1
+7fc964184000-7fc964383000 ---p 0000e000 08:01 12360248                   /home/ellabuser/altera/15.1/quartus/linux64/libgomp.so.1
+7fc964383000-7fc964384000 rw-p 0000d000 08:01 12360248                   /home/ellabuser/altera/15.1/quartus/linux64/libgomp.so.1
+7fc964384000-7fc96446e000 r-xp 00000000 08:01 12360246                   /home/ellabuser/altera/15.1/quartus/linux64/libstdc++.so.6
+7fc96446e000-7fc96466d000 ---p 000ea000 08:01 12360246                   /home/ellabuser/altera/15.1/quartus/linux64/libstdc++.so.6
+7fc96466d000-7fc964675000 r--p 000e9000 08:01 12360246                   /home/ellabuser/altera/15.1/quartus/linux64/libstdc++.so.6
+7fc964675000-7fc964677000 rw-p 000f1000 08:01 12360246                   /home/ellabuser/altera/15.1/quartus/linux64/libstdc++.so.6
+7fc964677000-7fc96468c000 rw-p 00000000 00:00 0 
+7fc96468c000-7fc9646fa000 r-xp 00000000 08:01 12359926                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so.1.53.0
+7fc9646fa000-7fc9648fa000 ---p 0006e000 08:01 12359926                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so.1.53.0
+7fc9648fa000-7fc9648fe000 rw-p 0006e000 08:01 12359926                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_program_options.so.1.53.0
+7fc9648fe000-7fc964901000 r-xp 00000000 08:01 12359946                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so.1.53.0
+7fc964901000-7fc964b00000 ---p 00003000 08:01 12359946                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so.1.53.0
+7fc964b00000-7fc964b01000 rw-p 00002000 08:01 12359946                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_system.so.1.53.0
+7fc964b01000-7fc964b17000 r-xp 00000000 08:01 12359923                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so.1.53.0
+7fc964b17000-7fc964d17000 ---p 00016000 08:01 12359923                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so.1.53.0
+7fc964d17000-7fc964d18000 rw-p 00016000 08:01 12359923                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_filesystem.so.1.53.0
+7fc964d18000-7fc964dfa000 r-xp 00000000 08:01 12359972                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so.1.53.0
+7fc964dfa000-7fc964ffa000 ---p 000e2000 08:01 12359972                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so.1.53.0
+7fc964ffa000-7fc965000000 rw-p 000e2000 08:01 12359972                   /home/ellabuser/altera/15.1/quartus/linux64/libboost_regex.so.1.53.0
+7fc965000000-7fc969100000 rwxp 00000000 00:00 0 
+7fc969100000-7fc974000000 ---p 00000000 00:00 0 
+7fc974000000-7fc974917000 rw-p 00000000 00:00 0 
+7fc974917000-7fc978000000 ---p 00000000 00:00 0 
+7fc978000000-7fc978001000 r--s 00000000 08:01 4194387                    /var/cache/fontconfig/551ecf3b0e8b0bca0f25c0944f561853-le64.cache-6
+7fc978001000-7fc978002000 r--s 00000000 08:01 4208051                    /var/cache/fontconfig/8a687c406b77f27d99abfeeba937fcce-le64.cache-6
+7fc978002000-7fc978003000 r--s 00000000 08:01 4194382                    /var/cache/fontconfig/30829fa25452a46451e813d634d7f916-le64.cache-6
+7fc978003000-7fc978006000 r--s 00000000 08:01 4194393                    /var/cache/fontconfig/75114ca45c98e8a441da0ff356701271-le64.cache-6
+7fc978006000-7fc978009000 r--s 00000000 08:01 4194412                    /var/cache/fontconfig/e13b20fdb08344e0e664864cc2ede53d-le64.cache-6
+7fc97801f000-7fc978022000 ---p 00000000 00:00 0 
+7fc978022000-7fc978159000 rwxp 00000000 00:00 0 
+7fc978159000-7fc9781f7000 r-xp 00000000 08:01 12359020                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3.so
+7fc9781f7000-7fc9783f6000 ---p 0009e000 08:01 12359020                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3.so
+7fc9783f6000-7fc9783fb000 rw-p 0009d000 08:01 12359020                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3.so
+7fc9783fb000-7fc978408000 r-xp 00000000 08:01 12358284                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+7fc978408000-7fc978607000 ---p 0000d000 08:01 12358284                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+7fc978607000-7fc978608000 rw-p 0000c000 08:01 12358284                   /home/ellabuser/altera/15.1/quartus/linux64/libccl_sqlite3_jdbc_jni_bridge.so
+7fc978608000-7fc978808000 rw-p 00000000 00:00 0 
+7fc978808000-7fc978909000 rwxp 00000000 00:00 0 
+7fc978909000-7fc97890c000 ---p 00000000 00:00 0 
+7fc97890c000-7fc978c0c000 rwxp 00000000 00:00 0 
+7fc978c0c000-7fc978c21000 r-xp 00000000 08:01 12360249                   /home/ellabuser/altera/15.1/quartus/linux64/libgcc_s.so.1
+7fc978c21000-7fc978e21000 ---p 00015000 08:01 12360249                   /home/ellabuser/altera/15.1/quartus/linux64/libgcc_s.so.1
+7fc978e21000-7fc978e22000 rw-p 00015000 08:01 12360249                   /home/ellabuser/altera/15.1/quartus/linux64/libgcc_s.so.1
+7fc978e22000-7fc978e87000 r-xp 00000000 08:01 13774437                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libfontmanager.so
+7fc978e87000-7fc979086000 ---p 00065000 08:01 13774437                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libfontmanager.so
+7fc979086000-7fc97908a000 rw-p 00064000 08:01 13774437                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libfontmanager.so
+7fc97908a000-7fc97909b000 rw-p 00000000 00:00 0 
+7fc97909b000-7fc9790aa000 r-xp 00000000 08:01 270297                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc9790aa000-7fc9792a9000 ---p 0000f000 08:01 270297                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc9792a9000-7fc9792aa000 r--p 0000e000 08:01 270297                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc9792aa000-7fc9792ab000 rw-p 0000f000 08:01 270297                     /usr/lib/x86_64-linux-gnu/libXi.so.6.1.0
+7fc9792ab000-7fc9792b0000 r-xp 00000000 08:01 270315                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc9792b0000-7fc9794af000 ---p 00005000 08:01 270315                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc9794af000-7fc9794b0000 r--p 00004000 08:01 270315                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc9794b0000-7fc9794b1000 rw-p 00005000 08:01 270315                     /usr/lib/x86_64-linux-gnu/libXtst.so.6.1.0
+7fc9794b1000-7fc9794b2000 r--s 00000000 08:01 4194376                    /var/cache/fontconfig/0c9eb80ebd1c36541ebe2852d3bb0c49-le64.cache-6
+7fc9794b2000-7fc9794b3000 r--s 00000000 08:01 4208049                    /var/cache/fontconfig/c277e94e32b20404286a1ddafa5a80f0-le64.cache-6
+7fc9794b3000-7fc9794b4000 r--s 00003000 08:01 5382158                    /home/ellabuser/altera/15.1/ip/altera/hps/widget/pin_mux_widget.jar
+7fc9794b4000-7fc9794b7000 r--s 00022000 08:01 408197                     /home/ellabuser/altera/15.1/ip/altera/frame_buffer/lib/ip_toolbench/jdom.jar
+7fc9794b7000-7fc9794bb000 r--s 0004d000 08:01 408198                     /home/ellabuser/altera/15.1/ip/altera/frame_buffer/lib/ip_toolbench/forms_rt.jar
+7fc9794bb000-7fc9794c4000 r--s 0007b000 08:01 408196                     /home/ellabuser/altera/15.1/ip/altera/frame_buffer/lib/ip_toolbench/frame_buffer.jar
+7fc9794c4000-7fc9794c8000 r--s 00084000 08:01 13389084                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/jsse.jar
+7fc9794c8000-7fc9794db000 r--s 00345000 08:01 13389082                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/resources.jar
+7fc9794db000-7fc97952c000 r-xp 00000000 08:01 13774415                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt_xawt.so
+7fc97952c000-7fc97972b000 ---p 00051000 08:01 13774415                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt_xawt.so
+7fc97972b000-7fc97972f000 rw-p 00050000 08:01 13774415                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt_xawt.so
+7fc97972f000-7fc979730000 rw-p 00000000 00:00 0 
+7fc979730000-7fc9797d3000 r-xp 00000000 08:01 13774400                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt.so
+7fc9797d3000-7fc9799d2000 ---p 000a3000 08:01 13774400                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt.so
+7fc9799d2000-7fc9799de000 rw-p 000a2000 08:01 13774400                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libawt.so
+7fc9799de000-7fc979a02000 rw-p 00000000 00:00 0 
+7fc979a02000-7fc979a1e000 r--s 00393000 08:01 5382056                    /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/ext/cldrdata.jar
+7fc979a1e000-7fc979a29000 r--s 00210000 08:01 5382057                    /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/ext/localedata.jar
+7fc979a29000-7fc979a66000 r--s 0024e000 08:01 3021363                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/xbean.jar
+7fc979a66000-7fc979a68000 r--s 00008000 08:01 3021264                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/wraplf.jar
+7fc979a68000-7fc979a69000 r--s 00002000 08:01 3021377                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/swing-worker.jar
+7fc979a69000-7fc979a6b000 r--s 00014000 08:01 3021296                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/org-netbeans-swing-outline-RELEASE691-sources.jar
+7fc979a6b000-7fc979a6c000 r--s 00011000 08:01 3021352                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/miglayout-swing.jar
+7fc979a6c000-7fc979a72000 r--s 0002e000 08:01 3021289                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/l2fprod-common-sheet.jar
+7fc979a72000-7fc979a74000 r--s 00004000 08:01 3021392                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jsr173_1.0_api.jar
+7fc979a74000-7fc979a78000 r--s 00031000 08:01 3021282                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jline-2.12.jar
+7fc979a78000-7fc979a84000 r--s 0008f000 08:01 3021380                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jgraphx.jar
+7fc979a84000-7fc979a95000 r--s 0014c000 08:01 3021382                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jfreechart-1.0.13.jar
+7fc979a95000-7fc979a9b000 r--s 00046000 08:01 3021323                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jcommon-1.0.16.jar
+7fc979a9b000-7fc979ad3000 r--s 00217000 08:01 3021303                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/docking-frames-core.jar
+7fc979ad3000-7fc979ae9000 r--s 000bc000 08:01 3021248                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/docking-frames-common.jar
+7fc979ae9000-7fc979aeb000 r--s 00003000 08:01 3021253                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.util.elf.jar
+7fc979aeb000-7fc979aed000 r--s 00002000 08:01 3021254                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.tools.sopcformats.jar
+7fc979aed000-7fc979aee000 r--s 00002000 08:01 3021336                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.tools.exampledesigns.jar
+7fc979aee000-7fc979aef000 r--s 00006000 08:01 3021343                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.spdy.jar
+7fc979aef000-7fc979af0000 r--s 0000b000 08:01 3021261                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.sldhubchannel.jar
+7fc979af0000-7fc979af1000 r--s 00005000 08:01 3021355                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.gdbserver.jar
+7fc979af1000-7fc979af2000 r--s 00007000 08:01 3021291                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.issp.jar
+7fc979af2000-7fc979af5000 r--s 0000d000 08:01 3021375                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.monitor.jar
+7fc979af5000-7fc979afc000 r--s 0003f000 08:01 3021317                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.busanalyzer.jar
+7fc979afc000-7fc979b65000 r--s 002c9000 08:01 3021260                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.transceivers.jar
+7fc979b65000-7fc979b73000 r--s 0007f000 08:01 3021369                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-collections-3.2.1.jar
+7fc979b73000-7fc979b74000 r--s 00003000 08:01 3021272                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.iobus.jar
+7fc979b74000-7fc979b75000 r--s 00002000 08:01 3021290                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.helper.jar
+7fc979b75000-7fc979b7a000 r--s 0002c000 08:01 3021293                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.dashboard.jar
+7fc979b7a000-7fc979b7e000 r--s 00020000 08:01 3021284                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.gui.jar
+7fc979b7e000-7fc979b83000 r--s 00029000 08:01 3021331                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.database.jar
+7fc979b83000-7fc979b84000 r--s 00001000 08:01 3021361                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.memory.jar
+7fc979b84000-7fc979b86000 r--s 00003000 08:01 3021368                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.pli.jar
+7fc979b86000-7fc979b87000 r--s 00006000 08:01 3021353                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.tcpchannel.jar
+7fc979b87000-7fc979b8a000 r--s 00011000 08:01 3021258                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.usb.jar
+7fc979b8a000-7fc979b8e000 r--s 0001c000 08:01 3021346                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.trace.drivers.jar
+7fc979b8e000-7fc979b8f000 r--s 00001000 08:01 3021302                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.matlabapi.jar
+7fc979b8f000-7fc979b93000 r--s 0001b000 08:01 3021277                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.app.jar
+7fc979b93000-7fc979b95000 r--s 0000c000 08:01 3021270                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar
+7fc979b95000-7fc979b96000 r--s 0000e000 08:01 3021384                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.atlantic.packetformatconverter.jar
+7fc979b96000-7fc979b98000 r--s 00003000 08:01 3021366                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.script.debugwindow.jar
+7fc979b98000-7fc979b9a000 r--s 00001000 08:01 3021373                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.nios2.trace.jar
+7fc979b9a000-7fc979b9c000 r--s 00009000 08:01 3021271                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.nios2.rtl.trace.jar
+7fc979b9c000-7fc979bae000 r--s 00091000 08:01 3021294                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.nios2.isa.jar
+7fc979bae000-7fc979bb7000 r--s 00076000 08:01 3021292                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jmwizc.jar
+7fc979bb7000-7fc979bb9000 r--s 00007000 08:01 3021370                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.module.jar
+7fc979bb9000-7fc979bbb000 r--s 0000a000 08:01 3021307                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.widgets.jar
+7fc979bbb000-7fc979bc0000 r--s 00050000 08:01 3021365                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.hypericonnect.jar
+7fc979bc0000-7fc979bc5000 r--s 00033000 08:01 3021328                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.sbtools.jar
+7fc979bc5000-7fc979bc7000 r--s 00007000 08:01 3021329                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.blackboxmodule.jar
+7fc979bc7000-7fc979bc8000 r--s 00003000 08:01 3021379                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.ui.jar
+7fc979bc8000-7fc979bf8000 r--s 003fa000 08:01 3021324                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopceditor.jar
+7fc979bf8000-7fc979bfb000 r--s 00020000 08:01 3021312                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.iplauncher.jar
+7fc979bfb000-7fc979bfd000 r--s 0000e000 08:01 3021359                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.ip.regenerator.jar
+7fc979bfd000-7fc979c00000 r--s 00024000 08:01 3021246                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.genman.jar
+7fc979c00000-7fc979c03000 r--s 0002d000 08:01 3021299                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.launch.jar
+7fc979c03000-7fc979c04000 r--s 00006000 08:01 3021305                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.configrom.jar
+7fc979c04000-7fc979c05000 r--s 00000000 08:01 3021247                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.jtagsimulator.jar
+7fc979c05000-7fc979c07000 r--s 00007000 08:01 3021252                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.driver.jar
+7fc979c07000-7fc979c0e000 r--s 00048000 08:01 3021311                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.jtag.jar
+7fc979c0e000-7fc979c1c000 r--s 00072000 08:01 3021345                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.plugin.elf.jar
+7fc979c1c000-7fc979c20000 r--s 00036000 08:01 3021288                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.gui.jar
+7fc979c20000-7fc979c2b000 r--s 00183000 08:01 3021287                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.jar
+7fc979c2b000-7fc979c2c000 ---p 00000000 00:00 0 
+7fc979c2c000-7fc979e2d000 rwxp 00000000 00:00 0 
+7fc979e2d000-7fc979e2e000 ---p 00000000 00:00 0 
+7fc979e2e000-7fc979f2e000 rwxp 00000000 00:00 0 
+7fc979f2e000-7fc979f2f000 ---p 00000000 00:00 0 
+7fc979f2f000-7fc97a02f000 rwxp 00000000 00:00 0 
+7fc97a02f000-7fc97a030000 ---p 00000000 00:00 0 
+7fc97a030000-7fc97a433000 rwxp 00000000 00:00 0 
+7fc97a433000-7fc97a434000 ---p 00000000 00:00 0 
+7fc97a434000-7fc97a534000 rwxp 00000000 00:00 0 
+7fc97a534000-7fc97a709000 r--s 033af000 08:01 13389094                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/rt.jar
+7fc97a709000-7fc97af09000 rw-p 00000000 00:00 0 
+7fc97af09000-7fc97af7c000 rw-p 00000000 00:00 0 
+7fc97af7c000-7fc97b0fe000 ---p 00000000 00:00 0 
+7fc97b0fe000-7fc97b138000 rw-p 00000000 00:00 0 
+7fc97b138000-7fc97b1f8000 ---p 00000000 00:00 0 
+7fc97b1f8000-7fc97b26b000 rw-p 00000000 00:00 0 
+7fc97b26b000-7fc97b3ec000 ---p 00000000 00:00 0 
+7fc97b3ec000-7fc97b4f1000 rw-p 00000000 00:00 0 
+7fc97b4f1000-7fc97b7ad000 ---p 00000000 00:00 0 
+7fc97b7ad000-7fc97b7c9000 r-xp 00000000 08:01 13774408                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libzip.so
+7fc97b7c9000-7fc97b9c8000 ---p 0001c000 08:01 13774408                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libzip.so
+7fc97b9c8000-7fc97b9c9000 rw-p 0001b000 08:01 13774408                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libzip.so
+7fc97b9c9000-7fc97b9d4000 r-xp 00000000 08:01 7609138                    /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7fc97b9d4000-7fc97bbd3000 ---p 0000b000 08:01 7609138                    /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7fc97bbd3000-7fc97bbd4000 r--p 0000a000 08:01 7609138                    /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7fc97bbd4000-7fc97bbd5000 rw-p 0000b000 08:01 7609138                    /lib/x86_64-linux-gnu/libnss_files-2.23.so
+7fc97bbd5000-7fc97bbdb000 rw-p 00000000 00:00 0 
+7fc97bbdb000-7fc97bbe6000 r-xp 00000000 08:01 7609142                    /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7fc97bbe6000-7fc97bde5000 ---p 0000b000 08:01 7609142                    /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7fc97bde5000-7fc97bde6000 r--p 0000a000 08:01 7609142                    /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7fc97bde6000-7fc97bde7000 rw-p 0000b000 08:01 7609142                    /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+7fc97bde7000-7fc97bdfd000 r-xp 00000000 08:01 7606908                    /lib/x86_64-linux-gnu/libnsl-2.23.so
+7fc97bdfd000-7fc97bffc000 ---p 00016000 08:01 7606908                    /lib/x86_64-linux-gnu/libnsl-2.23.so
+7fc97bffc000-7fc97bffd000 r--p 00015000 08:01 7606908                    /lib/x86_64-linux-gnu/libnsl-2.23.so
+7fc97bffd000-7fc97bffe000 rw-p 00016000 08:01 7606908                    /lib/x86_64-linux-gnu/libnsl-2.23.so
+7fc97bffe000-7fc97c000000 rw-p 00000000 00:00 0 
+7fc97c000000-7fc97c6bd000 rw-p 00000000 00:00 0 
+7fc97c6bd000-7fc980000000 ---p 00000000 00:00 0 
+7fc980000000-7fc980001000 r--s 00002000 08:01 3021313                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.lightclient.jar
+7fc980001000-7fc980004000 r--s 00038000 08:01 3021255                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.scripting.jar
+7fc980004000-7fc98000a000 r--s 0004a000 08:01 3021308                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.systemconsole.designs.jar
+7fc98000a000-7fc980011000 r--s 00056000 08:01 3021350                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.flash.jar
+7fc980011000-7fc980012000 r--s 00004000 08:01 3021376                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.cpexample.jar
+7fc980012000-7fc980013000 r--s 00003000 08:01 3021351                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.tcl.ui.jar
+7fc980013000-7fc980014000 r--s 0001f000 08:01 3021386                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.scripting.jar
+7fc980014000-7fc980016000 r--s 00006000 08:01 3021306                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.lwhal.jar
+7fc980016000-7fc980019000 r--s 0000b000 08:01 3021322                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.hal.jar
+7fc980019000-7fc98001d000 r--s 0001c000 08:01 3021267                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.core.jar
+7fc98001d000-7fc98001f000 r--s 0000f000 08:01 3021332                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.commandline.jar
+7fc98001f000-7fc98002b000 r--s 00084000 08:01 3021354                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.editor.jar
+7fc98002b000-7fc980032000 r--s 00063000 08:01 3021263                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.megawizard2.jar
+7fc980032000-7fc980036000 r--s 00029000 08:01 3021259                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.atlantic.jar
+7fc980036000-7fc980041000 r--s 00074000 08:01 3021309                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/velocity-dep-1.4.jar
+7fc980041000-7fc980049000 r--s 00051000 08:01 3021378                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/velocity-1.4.jar
+7fc980049000-7fc98004d000 r--s 0001f000 08:01 3021349                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/explicitlayout.jar
+7fc98004d000-7fc98004f000 r--s 00006000 08:01 3021364                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcfactories.jar
+7fc98004f000-7fc980051000 r--s 0001a000 08:01 3021340                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar
+7fc980051000-7fc980052000 r--s 00000000 08:01 3021280                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.librarian.jar
+7fc980052000-7fc980053000 r--s 00002000 08:01 3021339                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcplatform.jar
+7fc980053000-7fc980054000 r--s 00000000 08:01 3021249                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.service.jre.jar
+7fc980054000-7fc980055000 r--s 00000000 08:01 3021330                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/xmlbeans-2.2.0.jar
+7fc980055000-7fc980059000 r--s 0001e000 08:01 3021256                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.utilities.jar
+7fc980059000-7fc98005a000 r--s 00003000 08:01 3021245                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.embeddedsw.jar
+7fc98005a000-7fc98005c000 r--s 00016000 08:01 3021266                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.swinfo.jar
+7fc98005c000-7fc980060000 r--s 0000d000 08:01 3021297                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.schema.jar
+7fc980060000-7fc980061000 r--s 0000b000 08:01 3021300                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.elements.jar
+7fc980061000-7fc980067000 r--s 00089000 08:01 3021278                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.jar
+7fc980067000-7fc98006a000 r--s 00014000 08:01 3021362                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.app_lib.jar
+7fc98006a000-7fc980070000 r--s 0007a000 08:01 3021381                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jacl1.3.2a.jar
+7fc980070000-7fc980074000 r--s 0002a000 08:01 3021342                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar
+7fc980074000-7fc980077000 r--s 00012000 08:01 3021347                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar
+7fc980077000-7fc980079000 r--s 00007000 08:01 3021320                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar
+7fc980079000-7fc98007b000 r--s 0000d000 08:01 3021387                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar
+7fc98007b000-7fc98007c000 r--s 0000c000 08:01 3021391                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-logging-1.1.jar
+7fc98007c000-7fc98007d000 r--s 00014000 08:01 3021325                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/javasysmon.jar
+7fc98007d000-7fc980083000 r--s 00048000 08:01 3021273                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar
+7fc980083000-7fc98008b000 r-xp 00000000 08:01 7609133                    /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7fc98008b000-7fc98028a000 ---p 00008000 08:01 7609133                    /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7fc98028a000-7fc98028b000 r--p 00007000 08:01 7609133                    /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7fc98028b000-7fc98028c000 rw-p 00008000 08:01 7609133                    /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+7fc98028c000-7fc9802b6000 r-xp 00000000 08:01 13774447                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libjava.so
+7fc9802b6000-7fc9804b6000 ---p 0002a000 08:01 13774447                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libjava.so
+7fc9804b6000-7fc9804b8000 rw-p 0002a000 08:01 13774447                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libjava.so
+7fc9804b8000-7fc9804c5000 r-xp 00000000 08:01 13774419                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libverify.so
+7fc9804c5000-7fc9806c5000 ---p 0000d000 08:01 13774419                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libverify.so
+7fc9806c5000-7fc9806c7000 rw-p 0000d000 08:01 13774419                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libverify.so
+7fc9806c7000-7fc9806ce000 r-xp 00000000 08:01 7609143                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fc9806ce000-7fc9808cd000 ---p 00007000 08:01 7609143                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fc9808cd000-7fc9808ce000 r--p 00006000 08:01 7609143                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fc9808ce000-7fc9808cf000 rw-p 00007000 08:01 7609143                    /lib/x86_64-linux-gnu/librt-2.23.so
+7fc9808cf000-7fc9808d4000 r-xp 00000000 08:01 270289                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc9808d4000-7fc980ad3000 ---p 00005000 08:01 270289                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc980ad3000-7fc980ad4000 r--p 00004000 08:01 270289                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc980ad4000-7fc980ad5000 rw-p 00005000 08:01 270289                     /usr/lib/x86_64-linux-gnu/libXfixes.so.3.1.0
+7fc980ad5000-7fc980ade000 r-xp 00000000 08:01 270309                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc980ade000-7fc980cdd000 ---p 00009000 08:01 270309                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc980cdd000-7fc980cde000 r--p 00008000 08:01 270309                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc980cde000-7fc980cdf000 rw-p 00009000 08:01 270309                     /usr/lib/x86_64-linux-gnu/libXrender.so.1.3.0
+7fc980cdf000-7fc980ce8000 r-xp 00000000 08:01 271143                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc980ce8000-7fc980ee7000 ---p 00009000 08:01 271143                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc980ee7000-7fc980ee8000 r--p 00008000 08:01 271143                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc980ee8000-7fc980ee9000 rw-p 00009000 08:01 271143                     /usr/lib/x86_64-linux-gnu/libXcursor.so.1.0.2
+7fc980ee9000-7fc980eea000 ---p 00000000 00:00 0 
+7fc980eea000-7fc980fea000 rwxp 00000000 00:00 0 
+7fc980fea000-7fc9812c4000 r--p 00000000 08:01 262265                     /usr/lib/locale/locale-archive
+7fc9812c4000-7fc9812c5000 ---p 00000000 00:00 0 
+7fc9812c5000-7fc981cc5000 rwxp 00000000 00:00 0 
+7fc981cc5000-7fc981cca000 r-xp 00000000 08:01 270285                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc981cca000-7fc981ec9000 ---p 00005000 08:01 270285                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc981ec9000-7fc981eca000 r--p 00004000 08:01 270285                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc981eca000-7fc981ecb000 rw-p 00005000 08:01 270285                     /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+7fc981ecb000-7fc981ecd000 r-xp 00000000 08:01 270274                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc981ecd000-7fc9820cd000 ---p 00002000 08:01 270274                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc9820cd000-7fc9820ce000 r--p 00002000 08:01 270274                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc9820ce000-7fc9820cf000 rw-p 00003000 08:01 270274                     /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+7fc9820cf000-7fc9820f0000 r-xp 00000000 08:01 271692                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc9820f0000-7fc9822ef000 ---p 00021000 08:01 271692                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc9822ef000-7fc9822f0000 r--p 00020000 08:01 271692                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc9822f0000-7fc9822f1000 rw-p 00021000 08:01 271692                     /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+7fc9822f1000-7fc982302000 r-xp 00000000 08:01 270287                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc982302000-7fc982501000 ---p 00011000 08:01 270287                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc982501000-7fc982502000 r--p 00010000 08:01 270287                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc982502000-7fc982503000 rw-p 00011000 08:01 270287                     /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+7fc982503000-7fc982638000 r-xp 00000000 08:01 270270                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc982638000-7fc982838000 ---p 00135000 08:01 270270                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc982838000-7fc982839000 r--p 00135000 08:01 270270                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc982839000-7fc98283d000 rw-p 00136000 08:01 270270                     /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+7fc98283d000-7fc982898000 r-xp 00000000 08:01 13774402                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libsplashscreen.so
+7fc982898000-7fc982a98000 ---p 0005b000 08:01 13774402                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libsplashscreen.so
+7fc982a98000-7fc982a99000 rw-p 0005b000 08:01 13774402                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/libsplashscreen.so
+7fc982a99000-7fc982a9c000 rw-p 00000000 00:00 0 
+7fc982a9c000-7fc982ba4000 r-xp 00000000 08:01 7606754                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fc982ba4000-7fc982da3000 ---p 00108000 08:01 7606754                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fc982da3000-7fc982da4000 r--p 00107000 08:01 7606754                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fc982da4000-7fc982da5000 rw-p 00108000 08:01 7606754                    /lib/x86_64-linux-gnu/libm-2.23.so
+7fc982da5000-7fc9839bf000 r-xp 00000000 08:01 13774451                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+7fc9839bf000-7fc983bbe000 ---p 00c1a000 08:01 13774451                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+7fc983bbe000-7fc983c87000 rw-p 00c19000 08:01 13774451                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/server/libjvm.so
+7fc983c87000-7fc983cc8000 rw-p 00000000 00:00 0 
+7fc983cc8000-7fc983e88000 r-xp 00000000 08:01 7609125                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fc983e88000-7fc984088000 ---p 001c0000 08:01 7609125                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fc984088000-7fc98408c000 r--p 001c0000 08:01 7609125                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fc98408c000-7fc98408e000 rw-p 001c4000 08:01 7609125                    /lib/x86_64-linux-gnu/libc-2.23.so
+7fc98408e000-7fc984092000 rw-p 00000000 00:00 0 
+7fc984092000-7fc984095000 r-xp 00000000 08:01 7609127                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc984095000-7fc984294000 ---p 00003000 08:01 7609127                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc984294000-7fc984295000 r--p 00002000 08:01 7609127                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc984295000-7fc984296000 rw-p 00003000 08:01 7609127                    /lib/x86_64-linux-gnu/libdl-2.23.so
+7fc984296000-7fc9842ad000 r-xp 00000000 08:01 13905933                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+7fc9842ad000-7fc9844ac000 ---p 00017000 08:01 13905933                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+7fc9844ac000-7fc9844ad000 rw-p 00016000 08:01 13905933                   /home/ellabuser/altera/15.1/quartus/linux64/jre64/lib/amd64/jli/libjli.so
+7fc9844ad000-7fc9844c5000 r-xp 00000000 08:01 7609124                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc9844c5000-7fc9846c4000 ---p 00018000 08:01 7609124                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc9846c4000-7fc9846c5000 r--p 00017000 08:01 7609124                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc9846c5000-7fc9846c6000 rw-p 00018000 08:01 7609124                    /lib/x86_64-linux-gnu/libpthread-2.23.so
+7fc9846c6000-7fc9846ca000 rw-p 00000000 00:00 0 
+7fc9846ca000-7fc9846f0000 r-xp 00000000 08:01 7609122                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fc9846f0000-7fc9846f3000 r--s 0003e000 08:01 3021389                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.utilities.jar
+7fc9846f3000-7fc9846f8000 r--s 0000f000 08:01 3021285                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar
+7fc9846f8000-7fc9846fb000 r--s 0000b000 08:01 3021269                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar
+7fc9846fb000-7fc98470b000 r--s 000e8000 08:01 3021374                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar
+7fc98470b000-7fc984710000 r--s 00054000 08:01 3021275                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar
+7fc984710000-7fc984718000 r--s 00051000 08:01 3021385                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar
+7fc984718000-7fc98471e000 r--s 00031000 08:01 3021388                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jaxb-core.jar
+7fc98471e000-7fc984722000 r--s 00015000 08:01 3021276                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jaxb-api.jar
+7fc984722000-7fc984733000 r--s 000d0000 08:01 3021338                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/jaxb-impl.jar
+7fc984733000-7fc98473b000 r--s 00051000 08:01 3021348                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar
+7fc98473b000-7fc984741000 r--s 00050000 08:01 3021321                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar
+7fc984741000-7fc984748000 r--s 0007d000 08:01 3021383                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar
+7fc984748000-7fc984772000 r--s 001e9000 08:01 3021327                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/guava-15.0.jar
+7fc984772000-7fc9847e8000 rw-p 00000000 00:00 0 
+7fc9847e8000-7fc9847e9000 r--p 00000000 00:00 0 
+7fc9847e9000-7fc9847ed000 r--s 00000000 08:01 4207801                    /var/cache/fontconfig/7ef2298fde41cc6eeb7af42e48b7d293-le64.cache-6
+7fc9847ed000-7fc9847f6000 r--s 00034000 08:01 12465386                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/simulink_model.jar
+7fc9847f6000-7fc9847f8000 r--s 0000f000 08:01 12465389                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/extlibs/JSAP-2.0a.jar
+7fc9847f8000-7fc984818000 r--s 001d6000 08:01 12465392                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/extlibs/castor-1.0.3.jar
+7fc984818000-7fc984827000 r--s 00085000 08:01 12465387                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/dspb.jar
+7fc984827000-7fc984828000 r--s 00000000 08:01 3151778                    /home/ellabuser/altera/15.1/quartus/common/librarian/factories/mdl_factory.jar
+7fc984828000-7fc984833000 r--s 00074000 08:01 12465390                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/extlibs/velocity-dep-1.4.jar
+7fc984833000-7fc984836000 r--s 00013000 08:01 12465391                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/extlibs/velocity-tools-1.2.jar
+7fc984836000-7fc98483e000 r--s 00051000 08:01 12465393                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/extlibs/velocity-1.4.jar
+7fc98483e000-7fc984851000 r--s 00089000 08:01 12465388                   /home/ellabuser/altera/15.1/quartus/dsp_builder/bin64/dspb_entities.jar
+7fc984851000-7fc984852000 r--s 00000000 08:01 3151780                    /home/ellabuser/altera/15.1/quartus/common/librarian/factories/dspb_entities.jar
+7fc984852000-7fc984854000 r--s 00003000 08:01 3151779                    /home/ellabuser/altera/15.1/quartus/common/librarian/factories/cusp-factory.jar
+7fc984854000-7fc984856000 r--s 00007000 08:01 3021367                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar
+7fc984856000-7fc984857000 r--s 0000b000 08:01 3021360                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar
+7fc984857000-7fc98485d000 r--s 00045000 08:01 3021298                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar
+7fc98485d000-7fc984861000 r--s 00029000 08:01 3021315                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar
+7fc984861000-7fc984864000 r--s 0000e000 08:01 3021334                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.minieval2.jar
+7fc984864000-7fc984865000 r--s 00006000 08:01 3021251                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar
+7fc984865000-7fc984868000 r--s 00036000 08:01 3021274                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/org-netbeans-swing-outline.jar
+7fc984868000-7fc98486a000 r--s 00010000 08:01 3021304                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar
+7fc98486a000-7fc98486c000 r--s 00000000 08:01 3021283                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.version.jar
+7fc98486c000-7fc98486e000 r--s 00018000 08:01 3021337                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar
+7fc98486e000-7fc984870000 r--s 0000d000 08:01 3021341                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar
+7fc984870000-7fc984878000 r--s 0004f000 08:01 3021326                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.ui.ientity.jar
+7fc984878000-7fc98487a000 r--s 00004000 08:01 3021281                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.ui.quartus.jar
+7fc98487a000-7fc98487c000 r--s 00004000 08:01 3021318                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/mydoggy-res.jar
+7fc98487c000-7fc98487e000 r--s 00007000 08:01 3021314                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/mydoggy-api.jar
+7fc98487e000-7fc98488e000 r--s 000a4000 08:01 3021265                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/mydoggy-plaf.jar
+7fc98488e000-7fc984890000 r--s 00010000 08:01 3021310                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/miglayout15-swing.jar
+7fc984890000-7fc98489a000 r--s 00052000 08:01 3021390                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.ui.jar
+7fc98489a000-7fc9848a8000 r--s 00075000 08:01 3021371                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.componenteditor2.jar
+7fc9848a8000-7fc9848ac000 r--s 00022000 08:01 3021357                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/binding-2.0.6.jar
+7fc9848ac000-7fc9848b3000 r--s 00094000 08:01 3021319                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/beansbinding-1.2.1.jar
+7fc9848b3000-7fc9848b6000 r--s 00011000 08:01 3021333                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/basicmodel.jar
+7fc9848b6000-7fc9848b7000 r--s 00007000 08:01 3021372                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/asm-commons-3.1.jar
+7fc9848b7000-7fc9848b8000 r--s 0000a000 08:01 3021344                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/asm-3.1.jar
+7fc9848b8000-7fc9848bc000 r--s 0004a000 08:01 3021295                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/appframework-1.03.jar
+7fc9848bc000-7fc9848be000 r--s 00009000 08:01 3021358                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-pool.jar
+7fc9848be000-7fc9848c0000 r--s 00008000 08:01 3021286                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-logging.jar
+7fc9848c0000-7fc9848c4000 rw-p 00000000 00:00 0 
+7fc9848c4000-7fc9848c5000 r--s 00002000 08:01 3021335                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/TableLayout.jar
+7fc9848c5000-7fc9848c8000 r--s 0001f000 08:01 3021356                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-beanutils.jar
+7fc9848c8000-7fc9848d5000 r--s 0007c000 08:01 3021262                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-collections.jar
+7fc9848d5000-7fc9848d8000 r--s 00018000 08:01 3021257                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/commons-digester.jar
+7fc9848d8000-7fc9848dc000 r--s 00036000 08:01 3021279                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/QuickServer.jar
+7fc9848dc000-7fc9848dd000 r--s 0000d000 08:01 3021316                    /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/Nlview.jar
+7fc9848dd000-7fc9848e5000 rw-s 00000000 08:01 8399283                    /tmp/hsperfdata_root/10494
+7fc9848e5000-7fc9848e6000 rw-p 00000000 00:00 0 
+7fc9848e6000-7fc9848e7000 r--p 00000000 00:00 0 
+7fc9848e7000-7fc9848ee000 r--s 00000000 08:01 532464                     /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fc9848ee000-7fc9848ef000 rw-p 00000000 00:00 0 
+7fc9848ef000-7fc9848f0000 r--p 00025000 08:01 7609122                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fc9848f0000-7fc9848f1000 rw-p 00026000 08:01 7609122                    /lib/x86_64-linux-gnu/ld-2.23.so
+7fc9848f1000-7fc9848f2000 rw-p 00000000 00:00 0 
+7ffeca999000-7ffeca9b8000 rwxp 00000000 00:00 0                          [stack]
+7ffeca9b8000-7ffeca9bd000 rw-p 00000000 00:00 0 
+7ffeca9c4000-7ffeca9c7000 r--p 00000000 00:00 0                          [vvar]
+7ffeca9c7000-7ffeca9c9000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx1500M -XX:+UseSerialGC 
+java_command: com.altera.ipedit.QsysEditorApp --project-dir=/home/ellabuser/altera/15.1/Projects/DE1_SOC_Linux_FB/ --system-info=DEVICE_FAMILY=Cyclone V --system-info=DEVICE=5CSEMA5F31C6 --system-info=DEVICE_SPEEDGRADE=6 --host-controller
+java_class_path (initial): /home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/Nlview.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/QuickServer.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/TableLayout.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/appframework-1.03.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/asm-3.1.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/asm-commons-3.1.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/basicmodel.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/beansbinding-1.2.1.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/binding-2.0.6.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.componenteditor2.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.app_lib.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.editor.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.elements.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.core.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.hal.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.plugin.lwhal.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.schema.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.bsp.scripting.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.commandline.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.cpexample.jar:/home/ellabuser/altera/15.1/quartus/sopc_builder/model/lib/com.altera.embeddedsw.flash.jar:/home/ellabuser/altera/15.1/quartus/sop
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/home/ellabuser/altera/15.1/quartus/linux64:/home/ellabuser/altera/15.1/quartus/adm:/home/ellabuser/altera/15.1/quartus/linux64:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+USERNAME=root
+LD_LIBRARY_PATH=/home/ellabuser/altera/15.1/quartus/linux64:/home/ellabuser/altera/15.1/quartus/linux64:
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xa2fc90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0xa2fc90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x89b4b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGXFSZ: SIG_IGN, sa_mask[0]=0x01000000, sa_flags=0x10000000
+SIGILL: [libjvm.so+0x89b4b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x89cc50], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x89df00], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libcusp151_parser.so+0x13ba40], sa_mask[0]=0x00000002, sa_flags=0x10000000
+SIGTERM: [libcusp151_parser.so+0x13ba40], sa_mask[0]=0x00004000, sa_flags=0x10000000
+SIGQUIT: [libjvm.so+0x89df00], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=16.04
+DISTRIB_CODENAME=xenial
+DISTRIB_DESCRIPTION="Ubuntu 16.04.4 LTS"
+
+uname:Linux 4.13.0-39-generic #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018 x86_64
+libc:glibc 2.23 NPTL 2.23 
+rlimit: STACK 10240k, CORE 0k, NPROC 15568, NOFILE 1048576, AS infinity
+load average:0.54 0.45 0.43
+
+/proc/meminfo:
+MemTotal:        4037240 kB
+MemFree:         2203124 kB
+MemAvailable:    2549264 kB
+Buffers:           64316 kB
+Cached:           474888 kB
+SwapCached:        24800 kB
+Active:           919012 kB
+Inactive:         752296 kB
+Active(anon):     616280 kB
+Inactive(anon):   523516 kB
+Active(file):     302732 kB
+Inactive(file):   228780 kB
+Unevictable:          32 kB
+Mlocked:              32 kB
+SwapTotal:       4189180 kB
+SwapFree:        3891196 kB
+Dirty:               188 kB
+Writeback:          1012 kB
+AnonPages:       1126196 kB
+Mapped:           116496 kB
+Shmem:              7468 kB
+Slab:              69740 kB
+SReclaimable:      37524 kB
+SUnreclaim:        32216 kB
+KernelStack:        4816 kB
+PageTables:        23472 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6207800 kB
+Committed_AS:    3463340 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      171304 kB
+DirectMap2M:     4020224 kB
+
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, tsc
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: 06/17
+stepping	: 10
+cpu MHz		: 2055.009
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 4
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts rep_good nopl cpuid aperfmperf pni tm2 ssse3 lahf_lm pti retpoline dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2
+bogomips	: 5666.59
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: 06/17
+stepping	: 10
+cpu MHz		: 2055.548
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 4
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts rep_good nopl cpuid aperfmperf pni tm2 ssse3 lahf_lm pti retpoline dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2
+bogomips	: 5666.59
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: 06/17
+stepping	: 10
+cpu MHz		: 2408.960
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 2
+cpu cores	: 4
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts rep_good nopl cpuid aperfmperf pni tm2 ssse3 lahf_lm pti retpoline dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2
+bogomips	: 5666.59
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 23
+model name	: 06/17
+stepping	: 10
+cpu MHz		: 2030.104
+cache size	: 6144 KB
+physical id	: 0
+siblings	: 4
+core id		: 3
+cpu cores	: 4
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts rep_good nopl cpuid aperfmperf pni tm2 ssse3 lahf_lm pti retpoline dtherm
+bugs		: cpu_meltdown spectre_v1 spectre_v2
+bogomips	: 5666.59
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 4037240k(2202008k free), swap 4189180k(3891196k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.5-b02) for linux-amd64 JRE (1.8.0_05-b13), built on Mar 18 2014 00:29:27 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Thu May  3 18:02:12 2018
+elapsed time: 4319 seconds
+

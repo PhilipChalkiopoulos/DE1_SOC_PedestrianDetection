@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="1" showDebugLogEntries="1" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="479" />
+   <irq preferredWidth="63" />
+   <inputclock preferredWidth="208" />
+   <name preferredWidth="266" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="448" />
+   <clocksource preferredWidth="448" />
+   <frequency preferredWidth="435" />
+  </columns>
+ </clocktable>
+ <library
+   expandedCategories="Library/Qsys Interconnect,Library,Library/Qsys Interconnect/Memory-Mapped,Library/Basic Functions/Bridges and Adaptors,Library/Processors and Peripherals/Hard Processor Components,Library/Processors and Peripherals,Library/Basic Functions,Project,Library/Basic Functions/Bridges and Adaptors/Streaming" />
+ <window width="1099" height="840" x="53" y="24" />
+ <hdlexample language="VERILOG" />
+ <generation block_symbol_file="0" />
+</preferences>

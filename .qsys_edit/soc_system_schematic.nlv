@@ -1,0 +1,170 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst soc_system.master_non_sec.p2b_adapter -pg 1
+preplace inst soc_system.clk_0 -pg 1 -lvl 1 -y 910
+preplace inst soc_system.hps_0.clk_0 -pg 1
+preplace inst soc_system.led -pg 1 -lvl 43 -y 370
+preplace inst soc_system.alt_vip_mix_0 -pg 1 -lvl 37 -y 150
+preplace inst soc_system.pll_0 -pg 1 -lvl 2 -y 800
+preplace inst soc_system.master_secure.clk_rst -pg 1
+preplace inst soc_system.hps_0.axi_sdram -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.scaler_core -pg 1
+preplace inst soc_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst soc_system.alt_vip_cl_clp_1.clipper_core -pg 1
+preplace inst soc_system.master_non_sec -pg 1 -lvl 3 -y 1070
+preplace inst soc_system.alt_vip_cl_scl_0.av_st_clk_bridge -pg 1
+preplace inst soc_system.hps_0.timer0 -pg 1
+preplace inst soc_system.hps_0.i2c0 -pg 1
+preplace inst soc_system.hps_0.timer1 -pg 1
+preplace inst soc_system.hps_0.i2c1 -pg 1
+preplace inst soc_system.hps_0.timer2 -pg 1
+preplace inst soc_system.hps_0.wd_timer0 -pg 1
+preplace inst soc_system.hps_0.qspi -pg 1
+preplace inst soc_system.hps_0.i2c2 -pg 1
+preplace inst soc_system.hps_0.timer3 -pg 1
+preplace inst soc_system.hps_0.wd_timer1 -pg 1
+preplace inst soc_system.master_non_sec.clk_rst -pg 1
+preplace inst soc_system.hps_0.i2c3 -pg 1
+preplace inst soc_system.hps_0.gpio0 -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.user_packet_mux -pg 1
+preplace inst soc_system.hps_0.clkmgr -pg 1
+preplace inst soc_system.hps_0.gpio1 -pg 1
+preplace inst soc_system.hps_0.arm_a9_0 -pg 1
+preplace inst soc_system.hps_0.L2 -pg 1
+preplace inst soc_system.key -pg 1 -lvl 43 -y 470
+preplace inst soc_system.hps_0.gpio2 -pg 1
+preplace inst soc_system.alt_vip_cl_tpg_0 -pg 1 -lvl 3 -y 290
+preplace inst soc_system.hps_0.arm_a9_1 -pg 1
+preplace inst soc_system.hps_0.uart0 -pg 1
+preplace inst soc_system.onchip_memory -pg 1 -lvl 43 -y 750
+preplace inst soc_system.hps_0.uart1 -pg 1
+preplace inst soc_system.master_secure.transacto -pg 1
+preplace inst soc_system.master_secure -pg 1 -lvl 42 -y 750
+preplace inst soc_system.hps_0.spim0 -pg 1
+preplace inst soc_system.alt_vip_cl_tpg_0.video_out -pg 1
+preplace inst soc_system.master_secure.b2p_adapter -pg 1
+preplace inst soc_system.hps_0.spim1 -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.video_out -pg 1
+preplace inst soc_system.video_csc_0 -pg 1 -lvl 33 -y 250
+preplace inst soc_system.st_adapter_0.timing_adapter_0 -pg 1
+preplace inst soc_system.hps_0.timer -pg 1
+preplace inst soc_system.hps_0.sysmgr -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.control_slave -pg 1
+preplace inst soc_system.master_secure.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst soc_system.master_secure.clk_src -pg 1
+preplace inst soc_system.hps_0.l3regs -pg 1
+preplace inst soc_system.hps_0.f2s_periph_ref_clk -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.av_st_reset_bridge -pg 1
+preplace inst soc_system.hps_0.axi_ocram -pg 1
+preplace inst soc_system.hps_0.sdmmc -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.scheduler -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.video_out -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1 -pg 1 -lvl 12 -y 490
+preplace inst soc_system.alt_vip_cl_clp_1.av_st_clk_bridge -pg 1
+preplace inst soc_system.sysid_qsys -pg 1 -lvl 42 -y 910
+preplace inst soc_system.sdram -pg 1 -lvl 43 -y 270
+preplace inst soc_system.mipi_reset_n -pg 1 -lvl 43 -y 1480
+preplace inst soc_system.st_adapter_0.clk_bridge_0 -pg 1
+preplace inst soc_system.alt_vip_cl_tpg_0.av_st_reset_bridge -pg 1
+preplace inst soc_system.alt_vip_cl_tpg_0.tpg_core -pg 1
+preplace inst soc_system.master_non_sec.fifo -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.av_st_reset_bridge -pg 1
+preplace inst soc_system.mipi_pwdn_n -pg 1 -lvl 43 -y 1380
+preplace inst soc_system.hps_0.arm_gic_0 -pg 1
+preplace inst soc_system.alt_vip_vfr_vga -pg 1 -lvl 42 -y 410
+preplace inst soc_system.hps_0.rstmgr -pg 1
+preplace inst soc_system.st_adapter_0.rst_bridge_0 -pg 1
+preplace inst soc_system.i2c_opencores_camera -pg 1 -lvl 43 -y 1580
+preplace inst soc_system.hps_0.usb0 -pg 1
+preplace inst soc_system.alt_vip_cl_tpg_0.av_st_clk_bridge -pg 1
+preplace inst soc_system.hps_0.scu -pg 1
+preplace inst soc_system.hps_0.usb1 -pg 1
+preplace inst soc_system.master_secure.p2b_adapter -pg 1
+preplace inst soc_system.master_non_sec.clk_src -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.line_buffer -pg 1
+preplace inst soc_system.hps_0.hps_io -pg 1
+preplace inst soc_system.alt_vip_cpr_0 -pg 1 -lvl 20 -y 80
+preplace inst soc_system.alt_vip_cl_scl_0 -pg 1 -lvl 13 -y 510
+preplace inst soc_system.alt_vip_cl_tpg_0.scheduler -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.video_in -pg 1
+preplace inst soc_system.master_non_sec.timing_adt -pg 1
+preplace inst soc_system.hps_0.nand0 -pg 1
+preplace inst soc_system.alt_vip_cpr_2 -pg 1 -lvl 31 -y 100
+preplace inst soc_system.TERASIC_CAMERA_0 -pg 1 -lvl 3 -y 490
+preplace inst soc_system.alt_vip_vfb_0 -pg 1 -lvl 42 -y 50
+preplace inst soc_system.master_secure.b2p -pg 1
+preplace inst soc_system.master_non_sec.p2b -pg 1
+preplace inst soc_system.hps_0.gmac0 -pg 1
+preplace inst soc_system.i2c_opencores_mipi -pg 1 -lvl 43 -y 1260
+preplace inst soc_system.hps_0.gmac1 -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.user_packet_demux -pg 1
+preplace inst soc_system.hps_0 -pg 1 -lvl 43 -y 1080
+preplace inst soc_system.hps_0.hps_io.border -pg 1
+preplace inst soc_system.hps_0.eosc1 -pg 1
+preplace inst soc_system.hps_0.fpgamgr -pg 1
+preplace inst soc_system.st_adapter_0 -pg 1 -lvl 32 -y 230
+preplace inst soc_system.master_secure.timing_adt -pg 1
+preplace inst soc_system.jtag_uart -pg 1 -lvl 43 -y 890
+preplace inst soc_system.hps_0.dcan0 -pg 1
+preplace inst soc_system.hps_0.eosc2 -pg 1
+preplace inst soc_system.alt_vip_itc_0 -pg 1 -lvl 42 -y 150
+preplace inst soc_system.master_secure.fifo -pg 1
+preplace inst soc_system.master_non_sec.transacto -pg 1
+preplace inst soc_system.hps_0.dcan1 -pg 1
+preplace inst soc_system.hps_0.fpga_interfaces -pg 1
+preplace inst soc_system.hps_0.f2s_sdram_ref_clk -pg 1
+preplace inst soc_system.video_dma_controller_0 -pg 1 -lvl 34 -y 270
+preplace inst soc_system.sw -pg 1 -lvl 43 -y 630
+preplace inst soc_system.master_non_sec.b2p_adapter -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.user_packet_demux -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.kernel_creator -pg 1
+preplace inst soc_system.hps_0.sdrctl -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.user_packet_mux -pg 1
+preplace inst soc_system.hps_0.dma -pg 1
+preplace inst soc_system.master_non_sec.b2p -pg 1
+preplace inst soc_system.intr_capturer_0 -pg 1 -lvl 42 -y 310
+preplace inst soc_system.master_secure.p2b -pg 1
+preplace inst soc_system.alt_vip_cl_clp_1.video_in -pg 1
+preplace inst soc_system.alt_vip_cl_scl_0.scheduler -pg 1
+preplace inst soc_system.hps_0.bridges -pg 1
+preplace inst soc_system.master_non_sec.jtag_phy_embedded_in_jtag_master -pg 1
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.clocked_video,(SLAVE)soc_system.alt_vip_itc_0_clocked_video) 1 0 42 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 30 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ 70 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps_0.memory,(SLAVE)soc_system.memory) 1 0 43 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_cl_tpg_0.dout,(SLAVE)alt_vip_mix_0.din_2) 1 3 34 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 360 NJ 240 NJ 240 NJ 240 N
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)TERASIC_CAMERA_0.conduit_end,(SLAVE)soc_system.terasic_camera_0_conduit_end) 1 0 3 NJ 540 NJ 540 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.clk_vga,(MASTER)pll_0.outclk3) 1 2 42 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 870 NJ 860 NJ 880 NJ 880 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)video_csc_0.avalon_csc_sink,(MASTER)st_adapter_0.out_0) 1 32 1 N
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_vfb_0.dout,(SLAVE)alt_vip_cpr_2.din0) 1 30 13 11470 90 NJ 170 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 140 14600
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)sw.clk,(SLAVE)i2c_opencores_mipi.clock,(SLAVE)intr_capturer_0.clock,(SLAVE)jtag_uart.clk,(SLAVE)master_secure.clk,(SLAVE)led.clk,(SLAVE)master_non_sec.clk,(SLAVE)sysid_qsys.clk,(SLAVE)mipi_reset_n.clk,(SLAVE)mipi_pwdn_n.clk,(SLAVE)key.clk,(SLAVE)i2c_opencores_camera.clock,(SLAVE)hps_0.h2f_axi_clock,(SLAVE)onchip_memory.clk1,(MASTER)clk_0.clk,(SLAVE)hps_0.h2f_lw_axi_clock,(SLAVE)hps_0.f2h_axi_clock,(SLAVE)pll_0.refclk) 1 1 42 410 930 640 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 NJ 930 13890 1000 14540
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_cpr_2.dout0,(SLAVE)alt_vip_mix_0.din_1) 1 31 6 NJ 110 NJ 90 NJ 90 NJ 90 NJ 90 13480
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)pll_0.outclk2,(MASTER)soc_system.d8m_xclkin) 1 2 42 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 610 NJ 610 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 660 NJ 610 NJ 600 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)clk_0.clk_in,(SLAVE)soc_system.clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_vfb_0.din,(MASTER)alt_vip_cl_scl_0.dout) 1 13 29 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 NJ 540 13970
+preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)sdram.s1,(MASTER)alt_vip_vfb_0.read_master,(MASTER)hps_0.h2f_axi_master,(MASTER)alt_vip_vfb_0.write_master,(SLAVE)onchip_memory.s2) 1 42 2 14660 1020 15080
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.mipi_reset_n_external_connection,(SLAVE)mipi_reset_n.external_connection) 1 0 43 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ 1510 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.key_external_connection,(SLAVE)key.external_connection) 1 0 43 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 610 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_mix_0.dout,(SLAVE)alt_vip_itc_0.din) 1 37 5 NJ 200 NJ 200 NJ 200 NJ 200 13930
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)video_dma_controller_0.clk,(MASTER)pll_0.outclk0,(SLAVE)alt_vip_itc_0.is_clk_rst,(SLAVE)video_csc_0.clk,(SLAVE)alt_vip_cpr_0.clock,(SLAVE)alt_vip_cl_clp_1.main_clock,(SLAVE)TERASIC_CAMERA_0.clock_reset,(SLAVE)alt_vip_mix_0.clock,(SLAVE)alt_vip_vfr_vga.clock_reset,(SLAVE)alt_vip_cpr_2.clock,(SLAVE)sdram.clk,(SLAVE)alt_vip_vfb_0.clock,(SLAVE)st_adapter_0.in_clk_0,(SLAVE)alt_vip_cl_scl_0.main_clock,(SLAVE)alt_vip_vfr_vga.clock_master,(SLAVE)alt_vip_cl_tpg_0.main_clock) 1 2 41 640 230 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 NJ 260 4320 450 4750 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 6570 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 NJ 170 11450 70 12280 190 12600 210 12930 180 NJ 180 NJ 180 13500 90 NJ 90 NJ 90 NJ 90 NJ 90 13950 280 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_mix_0.din_0,(MASTER)alt_vip_cpr_0.dout0) 1 20 17 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 190 NJ 130 NJ 110 NJ 110 NJ 110 NJ 110 13520
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.sw_external_connection,(SLAVE)sw.external_connection) 1 0 43 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 630 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ 680 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.i2c_opencores_camera_export,(SLAVE)i2c_opencores_camera.export) 1 0 43 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ 1650 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)video_dma_controller_0.avalon_dma_master,(SLAVE)onchip_memory.s1) 1 34 9 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 770 NJ 720 NJ 830 NJ
+preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)key.irq,(MASTER)intr_capturer_0.interrupt_receiver,(SLAVE)sw.irq,(MASTER)hps_0.f2h_irq0,(SLAVE)jtag_uart.irq) 1 42 2 14560 1000 15100
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)sdram.wire,(SLAVE)soc_system.sdram_wire) 1 0 43 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 210 NJ 330 NJ 340 NJ 220 NJ 220 NJ 220 NJ 300 NJ 250 NJ 250 NJ 250 NJ 250 NJ 300 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)pll_0.outclk1,(MASTER)soc_system.clk_sdram) 1 2 42 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 650 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 830 NJ 850 NJ 860 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_cl_clp_1.din,(MASTER)TERASIC_CAMERA_0.avalon_streaming_source) 1 3 9 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ 520 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_cpr_2.dout1,(SLAVE)st_adapter_0.in_0) 1 31 1 12220
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)video_csc_0.avalon_csc_source,(SLAVE)video_dma_controller_0.avalon_dma_sink) 1 33 1 12990
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.led_external_connection,(SLAVE)led.external_connection) 1 0 43 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 260 NJ 340 NJ 340 NJ 340 NJ 290 NJ 290 NJ 290 NJ 290 NJ 400 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.i2c_opencores_mipi_export,(SLAVE)i2c_opencores_mipi.export) 1 0 43 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ 1330 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_cl_scl_0.din,(MASTER)alt_vip_cl_clp_1.dout) 1 12 1 N
+preplace netloc FAN_IN<net_container>soc_system</net_container>(MASTER)alt_vip_vfr_vga.avalon_master,(SLAVE)hps_0.f2h_axi_slave,(MASTER)master_secure.master) 1 42 1 14520
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.hps_0_h2f_reset,(MASTER)hps_0.h2f_reset) 1 43 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)mipi_pwdn_n.external_connection,(SLAVE)soc_system.mipi_pwdn_n_external_connection) 1 0 43 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ 1410 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)alt_vip_vfr_vga.avalon_streaming_source,(SLAVE)alt_vip_cpr_0.din0) 1 19 24 6610 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 460 NJ 580 14500
+preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)alt_vip_cl_clp_1.control,(SLAVE)sysid_qsys.control_slave,(SLAVE)alt_vip_vfr_vga.avalon_slave,(SLAVE)mipi_reset_n.s1,(SLAVE)sw.s1,(MASTER)master_non_sec.master,(SLAVE)key.s1,(SLAVE)led.s1,(SLAVE)intr_capturer_0.avalon_slave_0,(SLAVE)i2c_opencores_mipi.avalon_slave_0,(SLAVE)alt_vip_mix_0.control,(SLAVE)i2c_opencores_camera.avalon_slave_0,(MASTER)hps_0.h2f_lw_axi_master,(SLAVE)video_dma_controller_0.avalon_dma_control_slave,(SLAVE)mipi_pwdn_n.s1) 1 3 41 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 NJ 1080 4300 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 NJ 410 13030 380 NJ 380 NJ 380 13540 320 NJ 320 NJ 270 NJ 270 NJ 270 13930 1020 14620 1040 15060
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps_0.hps_io,(SLAVE)soc_system.hps_0_hps_io) 1 0 43 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.is_clk_rst_reset,(SLAVE)mipi_pwdn_n.reset,(SLAVE)TERASIC_CAMERA_0.clock_reset_reset,(MASTER)clk_0.clk_reset,(SLAVE)alt_vip_vfb_0.reset,(SLAVE)led.reset,(SLAVE)st_adapter_0.in_rst_0,(SLAVE)master_secure.clk_reset,(SLAVE)sysid_qsys.reset,(SLAVE)master_non_sec.clk_reset,(SLAVE)jtag_uart.reset,(SLAVE)alt_vip_cpr_0.reset,(SLAVE)alt_vip_mix_0.reset,(SLAVE)alt_vip_vfr_vga.clock_master_reset,(SLAVE)mipi_reset_n.reset,(SLAVE)alt_vip_vfr_vga.clock_reset_reset,(SLAVE)key.reset,(SLAVE)alt_vip_cpr_2.reset,(SLAVE)alt_vip_cl_tpg_0.main_reset,(SLAVE)sw.reset,(SLAVE)onchip_memory.reset1,(SLAVE)intr_capturer_0.reset_sink,(SLAVE)alt_vip_cl_clp_1.main_reset,(SLAVE)i2c_opencores_camera.clock_reset,(SLAVE)video_dma_controller_0.reset,(SLAVE)i2c_opencores_mipi.clock_reset,(SLAVE)alt_vip_cl_scl_0.main_reset,(SLAVE)video_csc_0.reset,(SLAVE)sdram.reset,(SLAVE)pll_0.reset) 1 1 42 430 910 680 250 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 NJ 280 4280 430 4770 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 6590 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 NJ 190 11410 50 12300 150 12640 190 12910 200 NJ 200 NJ 200 13560 110 NJ 110 NJ 110 NJ 110 NJ 110 14010 900 14600
+levelinfo -pg 1 0 200 15250
+levelinfo -hier soc_system 210 240 510 850 1420 2060 2420 2600 3030 3670 4030 4260 4640 4880 5030 5120 5250 5740 6180 6550 7110 7480 7900 8340 8960 9330 9760 10440 10750 11020 11390 12090 12460 12740 13060 13420 13440 13600 13750 13790 13810 13850 14250 14870 15120
